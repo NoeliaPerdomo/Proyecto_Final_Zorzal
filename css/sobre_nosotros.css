@@ -1,0 +1,87 @@
+#sobre_nosotros{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 8rem 12rem 0rem 12rem; /* arriba derecha abajo izquiera */
+    background-color: var(--background);
+    color: var(--text_black);
+}
+
+/* Titulo con linea debajo */
+#titulo{
+    font-size: 2.5rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    color: var(--background_dorado2);
+    position: relative;
+    margin-bottom: 3rem; /* separación entre el titulo y los demás elementos */
+}
+#titulo::after{
+    content: "";
+    display: block;
+    width: 30%;
+    height: 4px;
+    background-color: var(--text_dorado2);
+    display: block;
+    margin: 0;
+}
+
+/* Contenido */
+#contenido{
+    display: flex;
+    align-items: stretch;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1200;
+    padding-top: 3rem;
+}
+
+/* Foto Perfil */
+#foto_perfil img{
+    width: 700px;
+    height: auto;
+    object-fit: cover; /* para que la imagen se ajuste bien*/
+    border-radius: 50px 0 50px 0;
+}
+
+#columna_texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 3rem;
+    background-color: var(--background);
+    border: 1px solid var(--background_dorado2);
+    border-radius: 0px 50px 0px 50px;
+}
+
+#texto{
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    line-height: 2.8rem;
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+#idioma{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+
+}
+
+#icono_idioma{
+    width: 80px;
+    height: auto;
+}
+
+#idioma h4{
+    font-size: 1.5rem;
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: var(--background_dorado2)
+}

@@ -1,0 +1,129 @@
+#descanso{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 8rem 12rem 0rem 12rem; /* arriba derecha abajo izquiera */
+    background-color: var(--background);
+    color: var(--text_black);
+}
+
+#descanso h3{
+    font-size: 2.5rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    color: var(--background_dorado2);
+    position: relative;
+    margin-bottom: 3rem; /* separación entre el titulo y los demás elementos */
+}
+
+#descanso h3::after{
+    content: "";
+    display: block;
+    width: 18%;
+    height: 4px;
+    background-color: var(--text_dorado2);
+    display: block;
+    margin: 0;
+}
+
+
+/* SECCION ICONOS */
+
+#descanso_icons{
+    display: flex;
+    justify-content: center; /* Centrar los íconos en el contenedor */
+    width: 100%;
+}
+
+/* Contenedor de íconos */
+#descanso_icons ul {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    gap: 1.5rem 3rem; /* espaciado entre iconos vertical y horizontal */
+    list-style: none;
+    padding: 0;
+}
+
+#descanso_icons li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 5rem; /*espaciado entre los iconos y el texto */
+}
+
+/* Imágenes de los íconos */
+#descanso_icons picture img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    aspect-ratio: 1/1;
+}
+
+/* Texto debajo de los íconos */
+#descanso_icons p {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    color: var(--text_dorado2);
+    width: 100%;
+    text-align: center;
+    justify-content: baseline;
+    white-space: nowrap; /* para que el texto se mantenga en una sola linea */
+}
+
+
+/* SECCION TEXTO */
+#descanso_text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+}
+
+#descanso_text ul{
+    list-style: none;
+}
+
+#descanso_text p{
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    line-height: 3.2rem;
+    max-width: 99%;
+    text-align: justify;
+}
+
+
+/* SECCION DESCANSO Y DIVERSION FOTOS */
+
+/* uso grid para hacer tres columnas para ubicar las fotos */
+#fotos_descanso ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    justify-content: center;
+    gap: 2rem; /* espaciado entre fotos */
+    list-style: none;
+}
+
+#fotos_descanso ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* para que no sobresalga */
+}
+
+#fotos_descanso ul li picture img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50px 0 50px 0;
+}

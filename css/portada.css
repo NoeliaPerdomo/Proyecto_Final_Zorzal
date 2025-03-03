@@ -1,0 +1,88 @@
+body > main{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Foto de portada */
+body > main > picture{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body > main > picture > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* para que la imagen cubra todo */
+}
+
+/* Contenido de la portada */
+body > main > article{
+    position: relative; /* texto sobre imagen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    width: 40%;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.458);
+    padding: 3rem;
+    margin-top: 12vh;
+    max-width: 50%; /* asi el texto no ocupa todo el ancho */
+    color: white;
+    z-index: 2;
+}
+
+/* Texto */
+body > main > article > h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Playfair Display";
+    text-align: center;
+    
+}
+
+body > main > article > h3 {
+    font-size: 3rem;
+    font-weight: normal;
+    font-family: "Playfair Display";
+    text-align: center;
+}
+
+body > main > article > p {
+    font-size: 2.7rem;
+    font-weight: 600;
+    font-family: "Josefin Sans";
+    max-width: 90%;
+    margin-top: 3rem;
+    line-height: 3rem;
+}
+
+/* Botón */
+body > main > article > a {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
+    padding: 1.5rem 2rem;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+}
+
+body > main > article > a:hover {
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,98 @@
+body > footer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--background_black2);
+    position: relative;
+}
+
+body > footer > hr{
+    border: none;
+    height: 1px;
+    background-color: var(--background_gray);
+    width: 100%;
+    margin-bottom: 4.5rem;
+}
+
+body > footer > header h3{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color:var(--text_white);
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+body > footer nav{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 3.5rem;
+    margin-bottom: 2rem; /* con esto separo el nav con la ultima parte de la pag */
+}
+
+body > footer nav a{
+    color: var(--text_gray_light);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+#linea_zorzal{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+}
+
+#linea_zorzal li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+#linea_zorzal img{
+    width: 60px;
+    height: auto;
+}
+
+
+#linea_zorzal h2{
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: var(--text_white);
+    white-space: nowrap;
+    margin-left: 2rem;
+}
+
+#linea_zorzal ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#linea_zorzal ul li p{
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: var(--text_white);
+    white-space: nowrap;
+    margin-right: 2rem;
+}
+

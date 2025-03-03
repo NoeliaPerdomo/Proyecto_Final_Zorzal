@@ -1,0 +1,378 @@
+#zorzal{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 8rem 12rem 0rem 12rem; /* arriba derecha abajo izquiera */
+    background-color: var(--background);
+    color: var(--text_black);
+}
+
+#zorzal header h3{
+    font-size: 2.5rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    color: var(--background_dorado2);
+    position: relative;
+    margin-bottom: 3rem; /* separación entre el titulo y los demás elementos */
+}
+
+#zorzal header h3::after{
+    content: "";
+    display: block;
+    width: 30%;
+    height: 4px;
+    background-color: var(--text_dorado2);
+    display: block;
+    margin: 0;
+}
+
+/* SECCION ICONOS */
+
+#zorzal_icons{
+    display: flex;
+    justify-content: center; /* Centrar los íconos en el contenedor */
+    width: 100%;
+}
+
+/* Contenedor de íconos */
+#zorzal_icons ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Ajuste automático del ancho*/
+    gap: 1rem 2.3rem; /* espaciado entre iconos vertical y horizontal */
+    width: 100%;
+    max-width: 100%;
+    list-style: none;
+    padding: 0;
+    justify-items: center;
+}
+
+#zorzal_icons li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 5rem; /*espaciado entre los iconos y el texto */
+}
+
+/* Imágenes de los íconos */
+#zorzal_icons picture img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    aspect-ratio: 1/1;
+}
+
+/* Texto debajo de los íconos */
+#zorzal_icons p {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    color: var(--text_dorado2);
+    width: 100%;
+    text-align: center;
+    justify-content: baseline;
+    white-space: nowrap; /* para que el texto se mantenga en una sola linea */
+}
+
+
+/* SECCION ZORZAL TEXTO */
+#zorzal_text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    
+}
+
+#zorzal_text ul{
+    list-style: none;
+}
+
+#zorzal_text p{
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    line-height: 3.2rem;
+    max-width: 99%;
+    text-align: justify;
+}
+
+/* SECCION ZORZAL FOTOS */
+
+/* cocina y living */
+#fotos_cocina_living{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5rem 12rem 0rem 12rem;
+    margin-bottom: 3rem;
+}
+
+#fotos_cocina_living header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#fotos_cocina_living header h3{
+    text-align: left;
+    align-self: flex-start;
+}
+
+#fotos_cocina_living h3{
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    color: var(--background_dorado2);
+    position: relative;
+    margin-bottom: 1rem; 
+}
+
+#fotos_cocina_living hr{
+    border: none;
+    height: 1px;
+    background-color: var(--background_dorado2);
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+#fotos_cocina_living p{
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    line-height: 3.2rem;
+    max-width: 99%;
+    text-align: justify;
+    padding-bottom: 2rem;
+}
+
+/* uso grid para hacer tres columnas para ubicar las fotos */
+#fotos_cocina_living ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    justify-content: center;
+    gap: 2rem; /* espaciado entre fotos */
+    list-style: none;
+}
+
+#fotos_cocina_living ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* para que no sobresalga */
+}
+
+
+#fotos_cocina_living ul li picture img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50px 0 50px 0;
+}
+
+/* Habitaciones */
+#fotos_habitaciones{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5rem 12rem 0rem 12rem;
+}
+
+#fotos_habitaciones header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#fotos_habitaciones header h3{
+    text-align: left;
+    align-self: flex-start;
+}
+
+#fotos_habitaciones h3{
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    color: var(--background_dorado2);
+    position: relative;
+    margin-bottom: 1rem; 
+}
+
+#fotos_habitaciones hr{
+    border: none;
+    height: 1px;
+    background-color: var(--background_dorado2);
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+#fotos_habitaciones p{
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    line-height: 3.2rem;
+    max-width: 99%;
+    text-align: justify;
+    padding-bottom: 2rem;
+}  
+
+/* uso grid para hacer tres columnas para ubicar las fotos */
+#fotos_habitaciones ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    justify-content: center;
+    gap: 2rem; /* espaciado entre fotos */
+    list-style: none;
+}
+
+#fotos_habitaciones ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* para que no sobresalga */
+}
+
+#fotos_habitaciones ul li picture img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50px 0 50px 0;
+}
+
+/* Baño */
+#fotos_baño{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5rem 12rem 0rem 12rem;
+    margin-bottom: 3rem;
+}
+
+#fotos_baño header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#fotos_baño header h3{
+    text-align: left;
+    align-self: flex-start;
+}
+
+#fotos_baño h3{
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    color: var(--background_dorado2);
+    position: relative;
+    margin-bottom: 1rem; 
+}
+
+#fotos_baño hr{
+    border: none;
+    height: 1px;
+    background-color: var(--background_dorado2);
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+/* uso grid para hacer tres columnas para ubicar las fotos */
+#fotos_baño ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    justify-content: center;
+    gap: 2rem; /* espaciado entre fotos */
+    list-style: none;
+}
+
+#fotos_baño ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* para que no sobresalga */
+}
+
+#fotos_baño ul li picture img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50px 0 50px 0;
+}
+
+/* exterior */
+#fotos_exterior_zorzal{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5rem 12rem 0rem 12rem;
+    margin-bottom: 3rem;
+}
+
+#fotos_exterior_zorzal header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#fotos_exterior_zorzal header h3{
+    text-align: left;
+    align-self: flex-start;
+}
+
+#fotos_exterior_zorzal h3{
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    color: var(--background_dorado2);
+    position: relative;
+    margin-bottom: 1rem; 
+}
+
+#fotos_exterior_zorzal hr{
+    border: none;
+    height: 1px;
+    background-color: var(--background_dorado2);
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+#fotos_exterior_zorzal p{
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    line-height: 3.2rem;
+    max-width: 99%;
+    text-align: justify;
+    padding-bottom: 2rem;
+}
+
+/* uso grid para hacer 2 columnas para ubicar las fotos */
+#fotos_exterior_zorzal ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    justify-content: center;
+    gap: 2rem; /* espaciado entre fotos */
+    list-style: none;
+}
+
+#fotos_exterior_zorzal ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* para que no sobresalga */
+}
+
+#fotos_exterior_zorzal ul li picture img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50px 0 50px 0;
+}
