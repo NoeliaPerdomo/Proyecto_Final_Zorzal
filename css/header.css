@@ -68,7 +68,7 @@ body > header > .header_top > .user_btn > .btn {
     align-items: center;
     text-align: center;
     text-decoration: none;
-    padding: 0.6rem 0.8rem;
+    padding: 0.6rem 0;
     color: var(--text_dorado2);
     font-family: "Montserrat", sans-serif;
     font-size: 0.6rem;
@@ -76,6 +76,8 @@ body > header > .header_top > .user_btn > .btn {
     cursor: pointer;
     border: 1px solid var(--btn_dorado2);
     transition: background-color 0.3s, color 0.3s;
+    flex: 1;
+    min-width: 100px;
 }
 
 body > header > .header_top > .user_btn > .btn:hover{
@@ -160,7 +162,7 @@ body > header > form input[type="checkbox"]{
 }
 
 body > header > form label{
-    width: 2rem;
+    width: 1.5rem;
     aspect-ratio: 1/1;
     display: flex;
     align-items: center;
@@ -331,7 +333,6 @@ body > header > .header_top > h1 > span{
     
 /* Iniciar sesion y Registrarse */
 body > header > .header_top > .user_btn > .btn {
-    padding: 0.6rem 0.8rem;
     font-size: 0.6rem;
     }
 
@@ -426,7 +427,7 @@ body > header > form > .mobile_menu > a:active {
 
 
 
-@media(max-width: 480px) {
+@media(min-width:195px) and (max-width: 480px) {
   
 
 /* Primera Linea Titulos y botones */
@@ -448,7 +449,7 @@ body > header > .header_top > h1{
     flex-direction: column;
     align-items: center;
     gap: 0.1rem;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
 }
     
 /* by Jacarandá */
@@ -459,13 +460,140 @@ body > header > .header_top > h1 > span{
 /* Iniciar sesion y Registrarse */
 body > header > .header_top > .user_btn {
     justify-content: center;
-
-    gap: 0.5rem;
+    gap: 0.4rem;
 }
 
 body > header > .header_top > .user_btn > .btn {
-    padding: 0.7rem 0.7rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.5rem;
+    }
+
+/* Ocultar el menú principal */
+body > header > .nav_menu {
+    display: none;
+}
+    
+/* Mostrar el menú hamburguesa */
+body > header > form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+    
+/* Efecto al abrir menu hamburguesa */
+body > header > form > nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--background_);
+    padding: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    pointer-events: none; /* Para no hacer click cuando está oculto */
+}
+    
+/* Mostrar el menú hamburguesa al hacer click */
+body > header > form > input[type="checkbox"]:checked ~ nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--background);
+    padding: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        
+    /* Efecto menu */
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all; /* Para poder usar el menú */
+}
+    
+    
+body > header > form > .mobile_menu > a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     font-size: 0.6rem;
+    color: var(--text_dorado2);
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-decoration: none;
+    padding: 1rem;
+    border-bottom: 1px solid var(--background_dorado_light);
+}
+    
+body > header > form > input[type="checkbox"]:checked ~ .mobile_menu{
+    display: block;
+    background-color: var(--background); 
+    padding: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+        
+/* Cambio de fondo al hacer hover sobre los enlaces del menú */
+body > header > form > .mobile_menu > a:hover {
+    background-color: var(--background_gray);
+    color: var(--text_terracota); 
+    transition: background-color 0.3s ease-in-out;
+}
+    
+/* Cambio de fondo cuando se presiona en pantallas táctiles */
+body > header > form > .mobile_menu > a:active {
+    background-color: var(--background_gray); 
+    color: var(--text_terracota)
+}
+
+} 
+
+
+@media (max-width: 194px){
+    /* Primera Linea Titulos y botones */
+body > header > .header_top{
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    gap: 2rem;
+}
+    
+/* Casa de campo boutique */
+body > header > .header_top > h2{
+    display: none;
+}
+    
+/* Zorzal */
+body > header > .header_top > h1{
+    font-size: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+    padding-top: 0.5rem;
+}
+    
+/* by Jacarandá */
+body > header > .header_top > h1 > span{
+    font-size: 0.7rem;
+}
+    
+/* Iniciar sesion y Registrarse */
+body > header > .header_top > .user_btn {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.1rem;
+}
+
+body > header > .header_top > .user_btn > .btn {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.5rem;
     }
 
 /* Ocultar el menú principal */
@@ -552,4 +680,4 @@ body > header > form > .mobile_menu > a:active {
     color: var(--text_terracota)
 }
 
-} 
+}
