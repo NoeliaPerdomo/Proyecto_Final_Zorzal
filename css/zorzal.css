@@ -520,10 +520,11 @@
 
     #zorzal_icons ul{
         gap: 0.2rem 0.2rem;
+        justify-content: baseline;
     }
 
     #zorzal_icons picture img{
-        width:20px;
+        width: 20px;
     }
 
     #zorzal_icons p{
