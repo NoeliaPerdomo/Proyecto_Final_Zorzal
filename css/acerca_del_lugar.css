@@ -48,19 +48,36 @@
 
 /* Pantallas más chicas */
 
+@media(min-width:481px) and (max-width:940){
+
+#acerca_del_lugar{
+    padding: 1.8rem 1rem;
+}
+    
+#acerca_del_lugar h3{
+    font-size: 0.8rem;
+}
+    
+#acerca_del_lugar p{
+    font-size: 0.6rem;
+    line-height: 1.6rem;
+}
+    
+}
+
 @media(max-width:480px){
 
 #acerca_del_lugar{
-    padding: 2rem 1rem;
+    padding: 2rem 0.8rem;
 }
 
 #acerca_del_lugar h3{
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 #acerca_del_lugar p{
-    font-size: 0.8rem;
-    line-height: 2rem;
+    font-size: 0.7rem;
+    line-height: 1.6rem;
 }
 
 }
