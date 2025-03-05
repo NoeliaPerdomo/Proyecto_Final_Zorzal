@@ -4,13 +4,13 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    padding: 8rem 12rem 0rem 12rem; /* arriba derecha abajo izquiera */
+    padding: 5rem 6rem 0rem 6rem; /* arriba derecha abajo izquiera */
     background-color: var(--background);
     color: var(--text_black);
 }
 
 #zorzal header h3{
-    font-size: 2.5rem;
+    font-size: 1.3rem;
     font-family: "Playfair Display", serif;
     font-weight: 600;
     color: var(--background_dorado2);
@@ -22,9 +22,8 @@
     content: "";
     display: block;
     width: 30%;
-    height: 4px;
+    height: 2px;
     background-color: var(--text_dorado2);
-    display: block;
     margin: 0;
 }
 
@@ -34,13 +33,14 @@
     display: flex;
     justify-content: center; /* Centrar los íconos en el contenedor */
     width: 100%;
+    margin-bottom: 2rem;
 }
 
 /* Contenedor de íconos */
 #zorzal_icons ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Ajuste automático del ancho*/
-    gap: 1rem 2.3rem; /* espaciado entre iconos vertical y horizontal */
+    gap: 1rem 0.8rem; /* espaciado entre iconos vertical y horizontal */
     width: 100%;
     max-width: 100%;
     list-style: none;
@@ -53,13 +53,13 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 5rem; /*espaciado entre los iconos y el texto */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; /*espaciado entre los iconos y el texto */
 }
 
 /* Imágenes de los íconos */
 #zorzal_icons picture img {
-    width: 80px;
+    width: 40px;
     height: auto;
     object-fit: contain;
     margin-bottom: 1rem;
@@ -68,7 +68,7 @@
 
 /* Texto debajo de los íconos */
 #zorzal_icons p {
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-family: "Poppins", sans-serif;
     color: var(--text_dorado2);
     width: 100%;
@@ -93,10 +93,10 @@
 }
 
 #zorzal_text p{
-    font-size: 1.5rem;
+    font-size: 0.85rem;
     font-family: "Poppins", sans-serif;
-    line-height: 3.2rem;
-    max-width: 99%;
+    line-height: 1.6rem;
+    max-width: 100%;
     text-align: justify;
 }
 
@@ -104,11 +104,11 @@
 
 /* cocina y living */
 #fotos_cocina_living{
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 5rem 12rem 0rem 12rem;
+    padding: 0.5rem 6rem 0rem 6rem;
     margin-bottom: 3rem;
 }
 
@@ -124,7 +124,7 @@
 }
 
 #fotos_cocina_living h3{
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-family: "Playfair Display", serif;
     font-weight: 600;
     color: var(--background_dorado2);
@@ -137,14 +137,14 @@
     height: 1px;
     background-color: var(--background_dorado2);
     width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 #fotos_cocina_living p{
-    font-size: 1.5rem;
+    font-size: 0.85rem;
     font-family: "Poppins", sans-serif;
-    line-height: 3.2rem;
-    max-width: 99%;
+    line-height: 1.6rem;
+    max-width: 100%;
     text-align: justify;
     padding-bottom: 2rem;
 }
@@ -176,11 +176,12 @@
 
 /* Habitaciones */
 #fotos_habitaciones{
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 5rem 12rem 0rem 12rem;
+    padding: 0.5rem 6rem 0rem 6rem;
+    margin-bottom: 3rem;
 }
 
 #fotos_habitaciones header{
@@ -195,7 +196,7 @@
 }
 
 #fotos_habitaciones h3{
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-family: "Playfair Display", serif;
     font-weight: 600;
     color: var(--background_dorado2);
@@ -208,14 +209,14 @@
     height: 1px;
     background-color: var(--background_dorado2);
     width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 #fotos_habitaciones p{
-    font-size: 1.5rem;
+    font-size: 0.85rem;
     font-family: "Poppins", sans-serif;
-    line-height: 3.2rem;
-    max-width: 99%;
+    line-height: 1.6rem;
+    max-width: 100%;
     text-align: justify;
     padding-bottom: 2rem;
 }  
@@ -250,7 +251,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 5rem 12rem 0rem 12rem;
+    padding: 0.5rem 6rem 0rem 6rem;
     margin-bottom: 3rem;
 }
 
@@ -266,7 +267,7 @@
 }
 
 #fotos_baño h3{
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-family: "Playfair Display", serif;
     font-weight: 600;
     color: var(--background_dorado2);
@@ -279,7 +280,7 @@
     height: 1px;
     background-color: var(--background_dorado2);
     width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 /* uso grid para hacer tres columnas para ubicar las fotos */
@@ -308,11 +309,11 @@
 
 /* exterior */
 #fotos_exterior_zorzal{
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 5rem 12rem 0rem 12rem;
+    padding: 0.5rem 6rem 0rem 6rem;
     margin-bottom: 3rem;
 }
 
@@ -328,7 +329,7 @@
 }
 
 #fotos_exterior_zorzal h3{
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-family: "Playfair Display", serif;
     font-weight: 600;
     color: var(--background_dorado2);
@@ -341,14 +342,14 @@
     height: 1px;
     background-color: var(--background_dorado2);
     width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 #fotos_exterior_zorzal p{
-    font-size: 1.5rem;
+    font-size: 0.85rem;
     font-family: "Poppins", sans-serif;
-    line-height: 3.2rem;
-    max-width: 99%;
+    line-height: 1.6rem;
+    max-width: 100%;
     text-align: justify;
     padding-bottom: 2rem;
 }
@@ -375,4 +376,253 @@
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 50px 0 50px 0;
+}
+
+
+
+/* ------------------------------------------------ */
+
+/* Pantallas mas chicas */
+@media(min-width:941px) and (max-width: 1075px) {
+
+    #zorzal_icons picture img{
+        width: 35px;
+        margin-bottom: 0.7rem;
+    }
+
+    #zorzal_text p{
+        font-size: 0.80rem;
+        line-height: 1.4rem;
+        margin-bottom: 0;
+    }
+
+    #fotos_cocina_living p{
+        font-size: 0.80rem;
+        line-height: 1.4rem;
+    }
+
+    #fotos_cocina_living ul li picture img{
+        border-radius: 40px 0 40px 0;
+    }
+
+    #fotos_habitaciones p{
+        font-size: 0.80rem;
+        line-height: 1.4rem;
+    }
+
+    #fotos_habitaciones ul li picture img{
+        border-radius: 40px 0 40px 0;
+    }
+
+    #fotos_baño ul li picture img{
+        border-radius: 40px 0 40px 0;
+    }
+
+    #fotos_exterior_zorzal p{
+        font-size: 0.80rem;
+    }
+
+    #fotos_exterior_zorzal ul li picture img{
+        border-radius: 40px 0 40px 0;
+    }
+}
+
+
+/* ----------------------------------------------- */
+
+@media(min-width:561px) and (max-width:940px) {
+    #zorzal_icons picture img{
+        width: 30px;
+        margin-bottom: 0.5rem;
+    }
+
+    #zorzal_icons ul{
+        gap: 0.5rem 0.5rem;
+    }
+
+    #zorzal_text p{
+        font-size: 0.80rem;
+        line-height: 1.4rem;
+        margin-bottom: 0;
+    }
+
+    #fotos_cocina_living p{
+        font-size: 0.80rem;
+        line-height: 1.4rem;
+    }
+
+    #fotos_cocina_living ul{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+
+    #fotos_cocina_living ul li picture img{
+        border-radius: 30px 0 30px 0;
+    }
+
+    #fotos_habitaciones p{
+        font-size: 0.80rem;
+        line-height: 1.4rem;
+    }
+
+    #fotos_habitaciones ul{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+
+    #fotos_habitaciones ul li picture img{
+        border-radius: 30px 0 30px 0;
+    }
+
+    #fotos_baño ul{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+
+    #fotos_baño ul li picture img{
+        border-radius: 30px 0 30px 0;
+    }
+
+    #fotos_exterior_zorzal p{
+        font-size: 0.80rem;
+    }
+
+    #fotos_exterior_zorzal ul{
+        gap: 1rem;
+    }
+
+    #fotos_exterior_zorzal ul li picture img{
+        border-radius: 30px 0 30px 0;
+    }
+}
+
+/* ----------------------------------------------- */
+
+@media(max-width: 560px){
+
+    #zorzal{
+        align-items: center;
+        text-align: center;
+        padding: 3rem 4rem
+    }
+    #zorzal header h3{
+        text-align: center;
+        width: 100%;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #zorzal header h3::after{
+        margin: 5px auto 0;
+        width: 50%;
+    }
+
+    #zorzal_icons picture img{
+        width: 20px;
+        margin-bottom: 0.3rem;
+    }
+
+    #zorzal_icons ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem 0.8rem;
+    }
+
+    #zorzal_icons p{
+        font-size: 0.60rem;
+    }
+
+    #zorzal_text{
+        margin-bottom: 1rem;
+    }
+    #zorzal_text p{
+        font-size: 0.80rem;
+        line-height: 1.4rem;
+        margin-bottom: 0;
+    }
+
+    #fotos_cocina_living{
+        padding: 0rem 4rem;
+    }
+
+    #fotos_cocina_living h3{
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #fotos_cocina_living p{
+        font-size: 0.80rem;
+        line-height: 1.4rem;
+    }
+
+    #fotos_cocina_living ul{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+
+    #fotos_cocina_living ul li picture img{
+        border-radius: 20px 0 20px 0;
+    }
+
+    #fotos_habitaciones{
+        padding: 0rem 4rem;
+    }
+
+    #fotos_habitaciones h3{
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #fotos_habitaciones p{
+        font-size: 0.80rem;
+        line-height: 1.4rem;
+    }
+
+    #fotos_habitaciones ul{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+
+    #fotos_habitaciones ul li picture img{
+        border-radius: 20px 0 20px 0;
+    }
+
+    #fotos_baño{
+        padding: 0rem 4rem;
+    }
+
+    #fotos_baño h3{
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    #fotos_baño ul{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+
+    #fotos_baño ul li picture img{
+        border-radius: 20px 0 20px 0;
+    }
+
+    #fotos_exterior_zorzal{
+        padding: 0rem 4rem;
+    }
+
+    #fotos_exterior_zorzal p{
+        font-size: 0.80rem;
+    }
+
+    #fotos_exterior_zorzal h3{
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #fotos_exterior_zorzal ul{
+        gap: 1rem;
+    }
+
+    #fotos_exterior_zorzal ul li picture img{
+        border-radius: 20px 0 20px 0;
+    }
 }

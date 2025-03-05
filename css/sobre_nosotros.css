@@ -24,7 +24,6 @@
     width: 30%;
     height: 2px;
     background-color: var(--text_dorado2);
-    display: block;
     margin: 0;
 }
 
@@ -91,9 +90,7 @@
 /* Pantallas mas chicas */
 @media(min-width:941px) and (max-width: 1075px) {
 
-#sobre_nosotros{
-    padding: 3rem 4rem 0rem 4rem;
-}
+
  
 #texto{
     font-size: 0.80rem;
@@ -110,7 +107,7 @@
 }
 
 #idioma h4{
-    font-size: 0.75rem;
+    font-size: 0.80rem;
 }
 
 }
@@ -168,12 +165,12 @@
     }
 }
 
-@media (max-width: 560px){
+@media(max-width: 560px){
 
     #sobre_nosotros {
         text-align: center;
         align-items: center;
-        padding: 3rem 1rem 0rem 1rem;
+        padding: 0rem 4rem;
     }
 
     #titulo{
@@ -196,14 +193,14 @@
         width: 100%;
         max-width: 420px; 
         height: auto;
-        border-radius: 35px 0 35px 0;
+        border-radius: 20px 0 20px 0;
     }
 
     #columna_texto {
         width: 100%; 
         max-width: 420px;
         padding: 1rem;
-        border-radius: 0px 35px 0px 35px;
+        border-radius: 0px 20px 0px 20px;
     }
 
     #texto{
@@ -211,7 +208,7 @@
     }
 
     #idioma{
-        gap: 0.1rem;
+        font-size: 0.80rem;
     }      
 
     #icono_idioma{
