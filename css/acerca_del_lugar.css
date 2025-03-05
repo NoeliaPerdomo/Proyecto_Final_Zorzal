@@ -48,7 +48,7 @@
 
 /* Pantallas más chicas */
 
-@media(max-width:940){
+@media(max-width:940px){
 
 #acerca_del_lugar{
     padding: 1.8rem 1rem;
@@ -59,7 +59,7 @@
 }
     
 #acerca_del_lugar p{
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     line-height: 1.6rem;
 }
     
