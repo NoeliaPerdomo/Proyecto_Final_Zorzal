@@ -170,13 +170,14 @@
     #sobre_nosotros {
         text-align: center;
         align-items: center;
-        padding: 0rem 4rem;
+        padding: 2rem 3.5rem;
     }
 
     #titulo{
         text-align: center;
         width: 100%;
         font-size: 1rem;
+        margin-bottom: 2rem;
     }
 
     #titulo::after{
