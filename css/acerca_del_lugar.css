@@ -40,7 +40,7 @@
     padding: 1.5rem;
     font-size: 0.85rem;
     font-family: "Poppins";
-    line-height: 2.3rem;
+    line-height: 2rem;
 }
 
 
@@ -51,7 +51,7 @@
 @media(max-width:940px){
 
 #acerca_del_lugar{
-    padding: 1.8rem 1rem;
+    padding: 1.8rem 1.2rem;
 }
     
 #acerca_del_lugar h3{
@@ -59,7 +59,7 @@
 }
     
 #acerca_del_lugar p{
-    font-size: 0.85rem;
+    font-size: 0.80rem;
     line-height: 1.6rem;
 }
     
