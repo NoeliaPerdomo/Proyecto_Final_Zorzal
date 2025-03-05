@@ -4,14 +4,14 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    padding: 8rem 12rem 0rem 12rem; /* arriba derecha abajo izquiera */
+    padding: 4rem 6rem 0rem 6rem; /* arriba derecha abajo izquierda */
     background-color: var(--background);
     color: var(--text_black);
 }
 
 /* Titulo con linea debajo */
 #titulo{
-    font-size: 2.5rem;
+    font-size: 1.3rem;
     font-family: "Playfair Display", serif;
     font-weight: 600;
     color: var(--background_dorado2);
@@ -22,7 +22,7 @@
     content: "";
     display: block;
     width: 30%;
-    height: 4px;
+    height: 2px;
     background-color: var(--text_dorado2);
     display: block;
     margin: 0;
@@ -32,15 +32,14 @@
 #contenido{
     display: flex;
     align-items: stretch;
-    gap: 3rem;
+    gap: 1.5rem;
     width: 100%;
     max-width: 1200;
-    padding-top: 3rem;
 }
 
 /* Foto Perfil */
 #foto_perfil img{
-    width: 700px;
+    width: 300px;
     height: auto;
     object-fit: cover; /* para que la imagen se ajuste bien*/
     border-radius: 50px 0 50px 0;
@@ -52,36 +51,171 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    padding: 3rem;
+    padding: 1rem;
     background-color: var(--background);
     border: 1px solid var(--background_dorado2);
     border-radius: 0px 50px 0px 50px;
 }
 
 #texto{
-    font-size: 1.5rem;
+    font-size: 0.85rem;
     font-family: "Poppins", sans-serif;
-    line-height: 2.8rem;
+    line-height: 1.6rem;
     max-width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 #idioma{
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-top: 4rem;
+    margin-top: 0.75rem;
 
 }
 
 #icono_idioma{
-    width: 80px;
+    width: 40px;
     height: auto;
 }
 
 #idioma h4{
-    font-size: 1.5rem;
+    font-size: 0.85rem;
     font-family: "Montserrat";
     font-weight: 500;
     color: var(--background_dorado2)
+}
+
+
+/* ---------------------------------------------------- */
+
+/* Pantallas mas chicas */
+@media(min-width:941px) and (max-width: 1075px) {
+
+#sobre_nosotros{
+    padding: 3rem 4rem 0rem 4rem;
+}
+ 
+#texto{
+    font-size: 0.80rem;
+    line-height: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+#idioma{
+    margin-top: 0.5rem;
+}
+
+#icono_idioma{
+    width: 35px;
+}
+
+#idioma h4{
+    font-size: 0.75rem;
+}
+
+}
+
+
+/* ----------------------------------------------- */
+
+@media(min-width:561px) and (max-width:940px) {
+
+    #sobre_nosotros {
+        text-align: center;
+        align-items: center;
+    }
+
+    #titulo{
+        text-align: center;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    #titulo::after{
+        margin: 5px auto 0;
+    }
+
+    #contenido {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+    }
+
+    #foto_perfil img {
+        width: 100%;
+        max-width: 420px; 
+        height: auto;
+        border-radius: 35px 0 35px 0;
+    }
+
+    #columna_texto {
+        width: 100%; 
+        max-width: 420px;
+        padding: 1rem;
+        border-radius: 0px 35px 0px 35px;
+    }
+
+    #texto{
+        font-family: 0.80rem;
+    }
+
+    #idioma{
+        gap: 0.1rem;
+    }      
+
+    #icono_idioma{
+        width: 35px;
+    }
+}
+
+@media (max-width: 560px){
+
+    #sobre_nosotros {
+        text-align: center;
+        align-items: center;
+        padding: 3rem 1rem 0rem 1rem;
+    }
+
+    #titulo{
+        text-align: center;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    #titulo::after{
+        margin: 5px auto 0;
+    }
+
+    #contenido {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+    }
+
+    #foto_perfil img {
+        width: 100%;
+        max-width: 420px; 
+        height: auto;
+        border-radius: 35px 0 35px 0;
+    }
+
+    #columna_texto {
+        width: 100%; 
+        max-width: 420px;
+        padding: 1rem;
+        border-radius: 0px 35px 0px 35px;
+    }
+
+    #texto{
+        font-family: 0.80rem;
+    }
+
+    #idioma{
+        gap: 0.1rem;
+    }      
+
+    #icono_idioma{
+        width: 35px;
+    }
+
 }
