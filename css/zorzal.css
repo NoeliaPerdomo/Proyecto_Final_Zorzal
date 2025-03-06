@@ -314,7 +314,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 0.5rem 6rem 0rem 6rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 #fotos_exterior_zorzal header{
@@ -518,17 +518,8 @@
     }
 
 
-    #zorzal_icons ul{
-        gap: 0.2rem 0.2rem;
-        justify-content: baseline;
-    }
-
-    #zorzal_icons picture img{
-        width: 20px;
-    }
-
-    #zorzal_icons p{
-        font-size: 0.60rem;
+    #zorzal_icons{
+        display: none;
     }
 
     #zorzal_text{

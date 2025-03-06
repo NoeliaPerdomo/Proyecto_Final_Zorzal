@@ -20,7 +20,7 @@
 #descanso h3::after{
     content: "";
     display: block;
-    width: 18%;
+    width: 15%;
     height: 2px;
     background-color: var(--text_dorado2);
     margin: 0;
@@ -124,4 +124,99 @@
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 50px 0 50px 0;
+}
+
+
+
+/* ------------------------------------------------ */
+
+/* Pantallas mas chicas */
+@media(min-width:941px) and (max-width: 1075px) {
+
+    #descanso_icons picture img{
+        width: 35px;
+        margin-bottom: 0.7rem;
+    }
+
+    #descanso_text p{
+        font-size: 0.80rem;
+        line-height: 1.4rem;
+    }
+
+    #fotos_descanso ul li picture img{
+        border-radius: 40px 0 40px 0;
+    }
+}
+
+/* ----------------------------------------------- */
+
+@media(min-width:561px) and (max-width:940px) {
+
+    #descanso_icons picture img{
+        width: 30px;
+        margin-bottom: 0.5rem;
+    }
+
+    #descanso_icons ul{
+        gap: 0.5rem 0.5rem;
+    }
+
+    #descanso_text p{
+        font-size: 0.80rem;
+        line-height: 1.4rem;
+    }
+
+    #fotos_descanso ul{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+
+    #fotos_descanso ul li picture img{
+        border-radius: 30px 0 30px 0;
+    }
+
+}
+
+
+/* ----------------------------------------------- */
+
+@media(max-width: 560px){
+
+    #descanso{
+        align-items: center;
+        text-align: center;
+        padding: 4rem 3.5rem 3rem 3.5rem;
+    }
+
+    #descanso h3{
+        text-align: center;
+        width: 100%;
+        font-size: 1rem;
+        margin-bottom: 1.8rem;
+    }
+
+    #descanso h3::after{
+        margin: 5px auto 0;
+        width: 50%;
+    }
+
+    #descanso_icons{
+        display: none;
+    }
+
+    #descanso_text p{
+        font-size: 0.80rem;
+        line-height: 1.4rem;
+        margin-bottom: 0;
+    }
+
+    #fotos_descanso ul{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+
+    #fotos_descanso ul li picture img{
+        border-radius: 20px 0 20px 0;
+    }
+
 }

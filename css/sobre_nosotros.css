@@ -21,7 +21,7 @@
 #titulo::after{
     content: "";
     display: block;
-    width: 30%;
+    width: 50%;
     height: 2px;
     background-color: var(--text_dorado2);
     margin: 0;
@@ -170,7 +170,7 @@
     #sobre_nosotros {
         text-align: center;
         align-items: center;
-        padding: 2rem 3.5rem;
+        padding: 4rem 2rem 3rem 2rem;
     }
 
     #titulo{
