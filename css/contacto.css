@@ -10,8 +10,11 @@
 
 #contacto .form_container {
     width: 80%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--background);
-    padding: 4rem;
+    padding: 2rem 4rem;
     border-radius: 50px 0 50px 0;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -23,6 +26,7 @@
     font-weight: 600;
     color: var(--background_dorado2);
     text-align: center;
+    padding-top: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -69,11 +73,12 @@
 #contacto textarea {
     height: 120px;
     resize: none;
+    margin-bottom: 1rem;
 }
 
 /* Botón de enviar */
 #contacto button {
-    width: 15%;
+    width: 20%;
     height: 100%;
     padding: 0.8rem;
     font-size: 0.85rem;
@@ -92,28 +97,63 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 1024px) {
+
+/* -------------------------------------------------------- */
+
+/* Pantallas más chicas */
+
+@media(min-width:561px) and (max-width:940px) {
+
     #contacto .form-container {
         width: 60%;
-        padding: 2.5rem;
     }
-}
 
-@media (max-width: 768px) {
-    #contacto .form-container {
-        width: 80%;
-        padding: 2rem;
+    #contacto header h3 {
+        font-size: 1.1rem;
+
     }
-}
 
-@media (max-width: 480px) {
-    #contacto .form-container {
+    #contacto label {
+        font-size: 0.8rem;
+    }
+
+    #contacto input, #contacto textarea {
+        padding: 0.7rem;
+    }
+
+    #contacto button {
+        width: 25%;
+        padding: 0.65rem;
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+}   
+
+@media(max-width:560px){
+
+
+    #contacto header h3{    
+        font-size: 1rem;
+    }
+
+    #contacto .form_container {
         width: 90%;
         padding: 1.5rem;
     }
 
-    #contacto header h3 {
-        font-size: 2rem;
+    #contacto input, #contacto textarea{
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    #contacto label{
+        font-size: 0.75rem;
+    }
+    #contacto button{
+        width: 30%;
+        padding: 0.65rem;
+        font-size: 0.7rem;
+        display: block;
+        margin: 1rem auto 0;
     }
 }
