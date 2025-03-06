@@ -588,6 +588,10 @@
     #fotos_baño ul{
         grid-template-columns: repeat(2,1fr);
         gap: 1rem;
+        width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
     }
 
     #fotos_baño ul li picture img{
