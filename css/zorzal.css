@@ -283,7 +283,7 @@
     margin-bottom: 1rem;
 }
 
-/* uso grid para hacer tres columnas para ubicar las fotos */
+
 #fotos_baño ul{
     display: flex;
     flex-direction: column;
@@ -296,7 +296,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* para que no sobresalga */
 }
 
 #fotos_baño ul li picture img{
