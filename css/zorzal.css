@@ -287,8 +287,9 @@
 #fotos_baño ul{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    align-items: center;
     justify-content: center;
+    width: 50%;
     list-style: none;
 }
 
@@ -583,10 +584,7 @@
         font-size: 1rem;
         margin-bottom: 0.5rem;
     }
-    #fotos_baño ul{
-        grid-template-columns: repeat(2,1fr);
-        gap: 1rem;
-    }
+
 
     #fotos_baño ul li picture img{
         border-radius: 20px 0 20px 0;
