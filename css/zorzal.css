@@ -289,7 +289,6 @@
     flex-direction: column;
     width: 50%;
     justify-content: center;
-    gap: 2rem; /* espaciado entre fotos */
     list-style: none;
 }
 
