@@ -578,7 +578,7 @@
     }
 
     #fotos_baño{
-        padding: 0rem 3.5rem;
+        padding: 5rem 3.5rem;
     }
 
     #fotos_baño h3{
@@ -588,10 +588,6 @@
     #fotos_baño ul{
         grid-template-columns: repeat(2,1fr);
         gap: 1rem;
-        width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
     }
 
     #fotos_baño ul li picture img{
