@@ -285,9 +285,9 @@
 
 /* uso grid para hacer tres columnas para ubicar las fotos */
 #fotos_baño ul{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
     justify-content: center;
     gap: 2rem; /* espaciado entre fotos */
     list-style: none;
