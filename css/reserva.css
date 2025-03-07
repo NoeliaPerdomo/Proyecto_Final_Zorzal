@@ -218,7 +218,7 @@
     
     #reserva h2{
         font-size: 1.1rem;
-        padding-bottom: 1rem;
+        padding-bottom: 0.5rem;
     }
     
     #reserva p{
@@ -233,7 +233,7 @@
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
-        gap: 0.8rem;
+        gap: 1.1rem;
         margin-right: 0;
     }
     
