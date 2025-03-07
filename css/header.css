@@ -161,6 +161,7 @@ body > header > form input[type="checkbox"]{
     display: none; 
 }
 
+
 body > header > form label{
     width: 1.5rem;
     aspect-ratio: 1/1;
@@ -178,9 +179,26 @@ body > header > form > nav{
     display: none;
 }
 
-/* Ocultar el menú hamburguesa en pantallas grandes */
 body > header > form {
     display: none;
+}
+
+/* fondo difumado */
+body::before{
+    content: "";
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgba(46, 46, 46, 0.2);
+    backdrop-filter: blur(4px);
+    display: none;
+}
+    
+body:has(#actions input[type="checkbox"]:checked)::before{
+    display: flex;
 }
 
 
