@@ -50,14 +50,15 @@
 
 @media(min-width:561px) and (max-width:940px) {
 
-    #acerca_del_lugar{
-        padding: 1.8rem 1.2rem;
-    }
+#acerca_del_lugar{
+    padding: 3rem 3rem;
+}
         
-    #acerca_del_lugar p{
-        font-size: 0.80rem;
-        line-height: 1.6rem;
-    }
+#acerca_del_lugar p{
+    font-size: 0.80rem;
+    line-height: 1.6rem;
+}
+
 }
 
 /* -------------------------------------------------------- */
@@ -65,7 +66,7 @@
 @media(max-width:560px){
 
 #acerca_del_lugar{
-    padding: 1.8rem 1.2rem;
+    padding: 2.2rem 1.2rem;
 }
     
 
