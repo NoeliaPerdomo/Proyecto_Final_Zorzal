@@ -46,7 +46,7 @@ body > footer nav a{
 #linea_zorzal{
     width: 100%;
     display: flex;
-    position: absolute;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     bottom: 1rem;
@@ -56,7 +56,6 @@ body > footer nav a{
 
 #linea_zorzal ul{
     display: flex;
-    align-items: center;
     gap: 1rem;
     list-style: none;
     padding: 0;
@@ -66,9 +65,8 @@ body > footer nav a{
 #linea_zorzal li {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0rem;
     list-style: none;
-    
 }
 
 #linea_zorzal img{
@@ -97,6 +95,15 @@ body > footer nav a{
     margin: 0;
 }
 
+#linea_zorzal ul:first-of-type{
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+#linea_zorzal ul:last-of-type{
+    justify-content: flex-end;
+}
+
 #linea_zorzal ul li p{
     font-size: 0.75rem;
     font-family: "Montserrat", sans-serif;
@@ -118,6 +125,8 @@ body > footer nav a{
         gap: 0.5rem;
         position: relative;
         bottom: 0;
+        left: 0.2rem;
+        right: 02rem;
         text-align: center;
     }
 
@@ -136,6 +145,7 @@ body > footer nav a{
 
     body > footer > hr{
         margin-bottom: 1rem;
+        height: 0.5px;
     }
     
     #linea_zorzal ul {
@@ -145,17 +155,16 @@ body > footer nav a{
     }
     
     #linea_zorzal li {
-        display: inline-flex; /* Asegura que la imagen y el texto estén en línea */
         justify-content: flex-start;
-        gap: 0.5rem;
+        gap: 0.3rem;
     }
     
     #linea_zorzal img {
-        width: 30px;
+        width: 25px;
     }
     
     #linea_zorzal h2 {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         margin: 0;
         text-align: left; /* Alinea el texto con la imagen */
     }
@@ -167,7 +176,7 @@ body > footer nav a{
     #linea_zorzal ul li p {
         text-align: center;
         align-items: center;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         margin-top: 0.1rem; 
         margin-right: 0;
     }
@@ -184,6 +193,8 @@ body > footer nav a{
         gap: 0.5rem;
         position: relative;
         bottom: 0;
+        left: 0.2rem;
+        right: 02rem;
         text-align: center;
     }
 
@@ -192,7 +203,7 @@ body > footer nav a{
     }
 
     body > footer nav{
-        gap: 0.8rem;
+        gap: 0.5rem;
         margin-bottom: 1rem;
     }
 
@@ -202,8 +213,10 @@ body > footer nav a{
 
     body > footer > hr{
         margin-bottom: 1rem;
+        height: o.5px;
     }
     
+
     #linea_zorzal ul {
         list-style: none;
         padding: 0;
@@ -211,31 +224,36 @@ body > footer nav a{
     }
     
     #linea_zorzal li {
-        display: inline-flex; /* Asegura que la imagen y el texto estén en línea */
         justify-content: flex-start;
-        gap: 0.5rem;
+        flex-direction: column;
     }
     
     #linea_zorzal img {
-        width: 30px;
+        width: 25px;
     }
     
     #linea_zorzal h2 {
-        font-size: 0.7rem;
+        font-size: 0.55rem;
         margin: 0;
-        text-align: left; /* Alinea el texto con la imagen */
+        text-align: center; 
+        word-wrap: break-word;  /* permite que el texto se vaya para la siguiente linea */
+        white-space: normal; /* para que el texto vaya para abajo */
+        max-width: 100%; 
     }
-    
-    #linea_zorzal ul li {
+
+    #linea_zorzal ul li{
         text-align: center;
     }
     
     #linea_zorzal ul li p {
-        text-align: center;
+        text-align: center; 
         align-items: center;
-        font-size: 0.7rem;
-        margin-top: 0.1rem; 
+        font-size: 0.55rem;
+        margin-top: 0.1rem;
         margin-right: 0;
+        word-wrap: break-word; 
+        white-space: normal;  
+        max-width: 100%; 
     }
 
 }
