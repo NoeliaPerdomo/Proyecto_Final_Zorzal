@@ -110,7 +110,10 @@
 
     #contacto header h3 {
         font-size: 1.1rem;
+    }
 
+    #contacto header h3::after {
+        width: 20%;
     }
 
     #contacto label {
@@ -134,6 +137,10 @@
 
     #contacto header h3{    
         font-size: 1rem;
+    }
+
+    #contacto header h3::after {
+        width: 20%;
     }
 
     #contacto .form_container {

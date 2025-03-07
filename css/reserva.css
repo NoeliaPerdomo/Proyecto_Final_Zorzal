@@ -37,6 +37,7 @@
 
 #reserva h3 {
     font-size: 1.5rem;
+    text-align: left;
     font-family: "Playfair Display", serif;
     font-weight: bold;
     color: var(--background_dorado2);
@@ -92,3 +93,153 @@
     filter: none; /* para que conserven su color original */
     border-radius: 25px 25px 25px 0px;
 }
+
+
+/* -------------------------------------------------------- */
+
+/* Pantallas más chicas */
+
+/* Pantallas mas chicas */
+
+@media(min-width:561px) and (max-width: 1075px) {
+    
+    #reserva {
+        padding: 1rem 3rem;
+        gap: 3rem;
+    }
+
+    #reserva header{
+        margin-left: 0rem;
+        min-width: 170px;
+    }
+
+    #reservas h3 {
+        font-size: 1.1rem;
+    }
+
+    #reserva p{
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+    }
+
+    #reserva h2{
+        font-size: 1.2rem;
+    }
+
+    #reserva ul{
+        gap: 1rem;
+        margin-right: 0rem;
+    }
+
+    #reserva img{
+        width: 80px;
+    }
+}
+
+@media(min-width:301px) and (max-width:560px){
+    
+    #reserva{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 1rem;
+        gap: 2rem;
+    }
+    
+    #reserva header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1rem;
+    }
+    
+    #reserva h3 {
+        font-size: 1.1rem;
+        margin-top: 2rem;
+    }
+
+    #reserva h3::after{
+        width: 20%;
+        margin: 0.5rem auto;
+    }
+    
+    #reserva h2{
+        font-size: 1.1rem;
+        padding-bottom: 1rem;
+    }
+    
+    #reserva p{
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+        text-align: center;
+        max-width: 380px;
+        margin-bottom: 1rem;
+    }
+    
+    #reserva ul{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 2rem;
+        margin-right: 0;
+    }
+    
+    #reserva img{
+        width: 80px;
+    }
+}
+
+
+@media(min-width:300px){
+    #reserva{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 1rem;
+        gap: 2rem;
+    }
+    
+    #reserva header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1rem;
+    }
+    
+    #reserva h3 {
+        font-size: 1.1rem;
+        margin-top: 2rem;
+    }
+
+    #reserva h3::after{
+        width: 20%;
+        margin: 0.5rem auto;
+    }
+    
+    #reserva h2{
+        font-size: 1.1rem;
+        padding-bottom: 1rem;
+    }
+    
+    #reserva p{
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+        text-align: center;
+        max-width: 380px;
+        margin-bottom: 1rem;
+    }
+    
+    #reserva ul{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 0.8rem;
+        margin-right: 0;
+    }
+    
+    #reserva img{
+        width: 75px;
+    }
+
+}
+
