@@ -434,7 +434,7 @@ body > header > form > .mobile_menu > a:active {
 body > header > .header_top{
     flex-direction: column;
     justify-content: center;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 1rem;
     gap: 2rem;
 }
     
@@ -556,12 +556,14 @@ body > header > form > .mobile_menu > a:active {
 } 
 
 
+/* ----------------------------------------------------- */
+
 @media (max-width: 194px){
     /* Primera Linea Titulos y botones */
 body > header > .header_top{
     flex-direction: column;
     justify-content: center;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 1rem;
     gap: 2rem;
 }
     

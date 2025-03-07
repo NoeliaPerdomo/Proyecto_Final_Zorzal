@@ -203,7 +203,7 @@
     #descanso{
         align-items: center;
         text-align: center;
-        padding: 1.5rem 3.5rem;
+        padding: 3rem 3.5rem;
     }
 
     #descanso h3{
@@ -220,6 +220,10 @@
 
     #descanso_icons{
         display: none;
+    }
+
+    #descanso_text{
+        margin-bottom: 1rem;
     }
 
     #descanso_text p{
