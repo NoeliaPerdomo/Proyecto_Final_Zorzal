@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    padding: 5rem 6rem 0rem 6rem; /* arriba derecha abajo izquiera */
+    padding: 4.5rem 6rem 0rem 6rem; /* arriba derecha abajo izquierda */
     background-color: var(--background);
     color: var(--text_black);
 }
@@ -314,7 +314,6 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 0.5rem 6rem 0rem 6rem;
-    margin-bottom: 2rem;
 }
 
 #fotos_exterior_zorzal header{
@@ -431,6 +430,22 @@
 /* ----------------------------------------------- */
 
 @media(min-width:561px) and (max-width:940px) {
+   
+    #zorzal{
+        align-items: center;
+        text-align: center;
+    }
+
+    #zorzal header h3{
+        text-align: center;
+        width: 100%;
+    }
+
+    #zorzal header h3::after{
+        margin: 5px auto 0;
+        width: 50%;
+    }
+
     #zorzal_icons picture img{
         width: 30px;
         margin-bottom: 0.5rem;
@@ -509,7 +524,7 @@
         text-align: center;
         width: 100%;
         font-size: 1rem;
-        margin-bottom: 1.8rem;
+        margin-bottom: 2rem;
     }
 
     #zorzal header h3::after{
@@ -517,13 +532,12 @@
         width: 50%;
     }
 
-
     #zorzal_icons{
         display: none;
     }
 
     #zorzal_text{
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
     }
     #zorzal_text p{
         font-size: 0.80rem;
@@ -560,7 +574,7 @@
 
     #fotos_habitaciones h3{
         font-size: 1rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0rem;
     }
 
     #fotos_habitaciones p{
@@ -583,7 +597,7 @@
 
     #fotos_baño h3{
         font-size: 1rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0rem;
     }
     #fotos_baño ul{
         grid-template-columns: repeat(2,1fr);
@@ -604,7 +618,7 @@
 
     #fotos_exterior_zorzal h3{
         font-size: 1rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0rem;
     }
 
     #fotos_exterior_zorzal ul{

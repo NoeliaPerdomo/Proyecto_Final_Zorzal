@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    padding: 4rem 6rem 0rem 6rem; /* arriba derecha abajo izquierda */
+    padding: 4.5rem 6rem 0rem 6rem; /* arriba derecha abajo izquierda */
     background-color: var(--background);
     color: var(--text_black);
 }
@@ -21,7 +21,7 @@
 #titulo::after{
     content: "";
     display: block;
-    width: 50%;
+    width: 30%;
     height: 2px;
     background-color: var(--text_dorado2);
     margin: 0;
@@ -139,14 +139,14 @@
 
     #foto_perfil img {
         width: 100%;
-        max-width: 420px; 
+        max-width: 550px; 
         height: auto;
         border-radius: 35px 0 35px 0;
     }
 
     #columna_texto {
         width: 100%; 
-        max-width: 420px;
+        max-width: 550px;
         padding: 1rem;
         border-radius: 0px 35px 0px 35px;
     }
@@ -164,12 +164,15 @@
     }
 }
 
+
+/* ----------------------------------------------- */
+
 @media(max-width: 560px){
 
     #sobre_nosotros {
         text-align: center;
         align-items: center;
-        padding: 4rem 2rem 3rem 2rem;
+        padding: 3rem 3.5rem 0rem 3.5rem; /* arriba derecha abajo izquierda */
     }
 
     #titulo{

@@ -33,7 +33,7 @@
 #contacto header h3::after {
     content: "";
     display: block;
-    width: 10%;
+    width: 30%;
     height: 2px;
     background-color: var(--text_dorado2);
     margin: 0.5rem auto;
@@ -108,12 +108,8 @@
         width: 60%;
     }
 
-    #contacto header h3 {
-        font-size: 1.1rem;
-    }
-
     #contacto header h3::after {
-        width: 20%;
+        width: 30%;
     }
 
     #contacto label {
@@ -132,7 +128,9 @@
     }
 }   
 
-@media(max-width:560px){
+/* ----------------------------------------------- */
+
+@media(min-width:331px) and (max-width:560px){
 
 
     #contacto header h3{    
@@ -140,7 +138,7 @@
     }
 
     #contacto header h3::after {
-        width: 20%;
+        width: 30%;
     }
 
     #contacto .form_container {
@@ -154,13 +152,47 @@
     }
 
     #contacto label{
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
     #contacto button{
         width: 30%;
         padding: 0.65rem;
-        font-size: 0.7rem;
+        font-size: 0.75rem;
         display: block;
         margin: 1rem auto 0;
+    }
+}
+
+
+@media(max-width:330px){
+    #contacto header h3{    
+        font-size: 1rem;
+    }
+
+    #contacto header h3::after {
+        width: 30%;
+    }
+
+    #contacto .form_container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    #contacto input, #contacto textarea{
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    #contacto label{
+        font-size: 0.7rem;
+    }
+    #contacto button{
+        width: 100%;
+        padding: 0.50rem;
+        font-size: 0.75rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: center;
     }
 }

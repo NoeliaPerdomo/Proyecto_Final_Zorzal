@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    padding: 5rem 6rem 0rem 6rem; /* arriba derecha abajo izquiera */
+    padding: 4.5rem 6rem 0rem 6rem; /* arriba derecha abajo izquierda */
     background-color: var(--background);
     color: var(--text_black);
 }
@@ -49,6 +49,7 @@
 /* ----------------------------------------------- */
 
 @media(min-width:561px) and (max-width:940px) {
+
     #ubicacion{
         align-items: center;
         text-align: center;
@@ -86,7 +87,7 @@
 
     #ubicacion h3::after{
         margin: 5px auto 0;
-        width: 40%;
+        width: 30%;
     }
 
     #ubicacion iframe{

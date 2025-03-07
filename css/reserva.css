@@ -5,10 +5,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 8rem 8rem;
+    padding: 8rem 3.5rem;
     position: relative;
     overflow: hidden;
-    gap: 8rem;
+    gap: 5rem;
 }
 
 /* Filtro de blanco y negro SOLO para el fondo */
@@ -102,8 +102,8 @@
 @media(min-width:561px) and (max-width: 1075px) {
     
     #reserva {
-        padding: 1rem 3rem;
-        gap: 3rem;
+        padding: 3rem 3rem;
+        gap: 2rem;
     }
 
     #reserva header{
@@ -121,7 +121,7 @@
     }
 
     #reserva h2{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     #reserva ul{
@@ -134,13 +134,15 @@
     }
 }
 
+/* -------------------------------------------------------- */
+
 @media(min-width:301px) and (max-width:560px){
     
     #reserva{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 1rem 1rem;
+        padding: 3rem 1rem;
         gap: 2rem;
     }
     
@@ -188,12 +190,15 @@
 }
 
 
+/* -------------------------------------------------------- */
+
 @media(max-width:300px){
+    
     #reserva{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 1rem 1rem;
+        padding: 2rem 1rem;
         gap: 2rem;
     }
     
