@@ -97,8 +97,6 @@
 
 /* -------------------------------------------------------- */
 
-/* Pantallas más chicas */
-
 /* Pantallas mas chicas */
 
 @media(min-width:561px) and (max-width: 1075px) {
@@ -190,7 +188,7 @@
 }
 
 
-@media(min-width:300px){
+@media(max-width:300px){
     #reserva{
         flex-direction: column;
         align-items: center;
@@ -235,6 +233,7 @@
         justify-content: center;
         gap: 1.1rem;
         margin-right: 0;
+        margin-bottom: 3rem;
     }
     
     #reserva img{

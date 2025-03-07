@@ -54,11 +54,21 @@ body > footer nav a{
     right: 1rem;
 }
 
+#linea_zorzal ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 #linea_zorzal li {
     display: flex;
     align-items: center;
     gap: 1rem;
     list-style: none;
+    
 }
 
 #linea_zorzal img{
@@ -96,3 +106,136 @@ body > footer nav a{
     margin-right: 2rem;
 }
 
+/* -------------------------------------------------------- */
+
+/* Pantallas mas chicas */
+
+@media(min-width: 561px) and (max-width: 1075px){
+
+    #linea_zorzal {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+        position: relative;
+        bottom: 0;
+        text-align: center;
+    }
+
+    body > footer > header h3{
+        font-size: 0.85rem;
+    }
+
+    body > footer nav{
+        gap: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    body > footer nav a{
+        font-size: 0.75rem;
+    }
+
+    body > footer > hr{
+        margin-bottom: 1rem;
+    }
+    
+    #linea_zorzal ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #linea_zorzal li {
+        display: inline-flex; /* Asegura que la imagen y el texto estén en línea */
+        justify-content: flex-start;
+        gap: 0.5rem;
+    }
+    
+    #linea_zorzal img {
+        width: 30px;
+    }
+    
+    #linea_zorzal h2 {
+        font-size: 0.7rem;
+        margin: 0;
+        text-align: left; /* Alinea el texto con la imagen */
+    }
+    
+    #linea_zorzal ul li {
+        text-align: center;
+    }
+    
+    #linea_zorzal ul li p {
+        text-align: center;
+        align-items: center;
+        font-size: 0.7rem;
+        margin-top: 0.1rem; 
+        margin-right: 0;
+    }
+}
+
+
+/* -------------------------------------------------------- */
+
+
+@media (max-width: 560px) {
+    #linea_zorzal {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+        position: relative;
+        bottom: 0;
+        text-align: center;
+    }
+
+    body > footer > header h3{
+        font-size: 0.85rem;
+    }
+
+    body > footer nav{
+        gap: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    body > footer nav a{
+        font-size: 0.75rem;
+    }
+
+    body > footer > hr{
+        margin-bottom: 1rem;
+    }
+    
+    #linea_zorzal ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #linea_zorzal li {
+        display: inline-flex; /* Asegura que la imagen y el texto estén en línea */
+        justify-content: flex-start;
+        gap: 0.5rem;
+    }
+    
+    #linea_zorzal img {
+        width: 30px;
+    }
+    
+    #linea_zorzal h2 {
+        font-size: 0.7rem;
+        margin: 0;
+        text-align: left; /* Alinea el texto con la imagen */
+    }
+    
+    #linea_zorzal ul li {
+        text-align: center;
+    }
+    
+    #linea_zorzal ul li p {
+        text-align: center;
+        align-items: center;
+        font-size: 0.7rem;
+        margin-top: 0.1rem; 
+        margin-right: 0;
+    }
+
+}
