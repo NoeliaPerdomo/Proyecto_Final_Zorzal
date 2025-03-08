@@ -143,9 +143,10 @@ body{
 /* PARA PANTALLAS MAS CHICAS */
 
 @media screen and (max-width: 768px) {
+
     #iniciar_sesion{
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         height: 100vh;
         border-radius: 0;
         box-shadow: none;
@@ -171,21 +172,21 @@ body{
 
     #contenedor_formulario h1{
         color: var(--text_white);
-        font-size: 2.1rem;
+        font-size: 2rem;
         margin-bottom: 2rem;
         
     }
     
     #contenedor_formulario p{
         color: var(--text_white);
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         margin-bottom: 3.3rem;
     }
     
     
     #formulario label{
         color: var(--text_white);
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin-bottom: 0.5rem;
     }
 
@@ -203,9 +204,9 @@ body{
     }
 
     #formulario button{
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 500;
-        width: 50%;
+        width: 100%;
         padding: 0.8rem;
         margin-bottom: 0.8rem;
     }
@@ -217,8 +218,8 @@ body{
 
     #volver_home a{
         color: var(--text_white);
-        font-size: 1.3rem;
-        margin-top: 4rem;
+        font-size: 1.1rem;
+        margin-top: 1rem;
     }
     #icon_home img{
         filter:brightness(0) invert(1);
