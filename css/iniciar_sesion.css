@@ -222,7 +222,7 @@ body{
         color: var(--text_white);
         font-size: 1.1rem;
         margin-top: 2rem;
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
     }
     #icon_home img{
         filter:brightness(0) invert(1);
