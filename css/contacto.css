@@ -1,5 +1,6 @@
-/* SECCIÓN CONTACTO */
-#contacto {
+/*------ SECCIÓN CONTACTO ------*/
+
+#contacto{
     width: 100vw; 
     display: flex;
     justify-content: center;
@@ -8,7 +9,7 @@
     background-color: var(--background_gray);
 }
 
-#contacto .form_container {
+#contacto .form_container{
     width: 70%; 
     display: flex;
     flex-direction: column;
@@ -19,8 +20,8 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Titulo */
-#contacto header h3 {
+/*------ Titulo ------*/
+#contacto header h3{
     font-size: 1.3rem;
     font-family: "Playfair Display", serif;
     font-weight: 600;
@@ -30,7 +31,7 @@
     margin-bottom: 2rem;
 }
 
-#contacto header h3::after {
+#contacto header h3::after{
     content: "";
     display: block;
     width: 30%;
@@ -39,20 +40,20 @@
     margin: 0.5rem auto;
 }
 
-#contacto form {
+#contacto form{
     width: 100%;
 }
 
-#contacto ul {
+#contacto ul{
     list-style: none;
     padding: 0;
 }
 
-#contacto li {
+#contacto li{
     margin-bottom: 1.5rem;
 }
 
-#contacto label {
+#contacto label{
     font-size: 0.85rem;
     color: var(--text_gray);
     font-family: "Poppins", sans-serif;
@@ -62,7 +63,7 @@
     margin-bottom: 0.5rem;
 }
 
-#contacto input, #contacto textarea {
+#contacto input, #contacto textarea{
     width: 100%;
     padding: 0.8rem;
     border: 1px solid #ccc;
@@ -70,14 +71,14 @@
     font-size: 1rem;
 }
 
-#contacto textarea {
+#contacto textarea{
     height: 120px;
     resize: none;
     margin-bottom: 1rem;
 }
 
-/* Botón de enviar */
-#contacto button {
+/*------ Botón de enviar ------*/
+#contacto button{
     width: 15%;
     height: 100%;
     padding: 0.6rem;
@@ -88,11 +89,10 @@
     background-color: var(--background_dorado2);
     border: 3px solid var(--btn_dorado2);
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    
+    transition: background-color 0.3s, color 0.3s;  
 }
 
-#contacto button:hover {
+#contacto button:hover{
     background-color: var(--background_dorado2);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -100,27 +100,27 @@
 
 /* -------------------------------------------------------- */
 
-/* Pantallas más chicas */
+/*------ Pantallas más chicas ------*/
 
 @media(min-width:561px) and (max-width:940px) {
 
-    #contacto .form-container {
+    #contacto .form-container{
         width: 60%;
     }
 
-    #contacto header h3::after {
+    #contacto header h3::after{
         width: 30%;
     }
 
-    #contacto label {
+    #contacto label{
         font-size: 0.8rem;
     }
 
-    #contacto input, #contacto textarea {
+    #contacto input, #contacto textarea{
         padding: 0.7rem;
     }
 
-    #contacto button {
+    #contacto button{
         width: 20%;
         padding: 0.6rem;
         font-size: 0.8rem;
@@ -128,7 +128,7 @@
     }
 }   
 
-/* ----------------------------------------------- */
+/* ------------------------------------------------------- */
 
 @media(min-width:331px) and (max-width:560px){
 
@@ -137,11 +137,11 @@
         font-size: 1rem;
     }
 
-    #contacto header h3::after {
+    #contacto header h3::after{
         width: 30%;
     }
 
-    #contacto .form_container {
+    #contacto .form_container{
         width: 90%;
         padding: 1.5rem;
     }
@@ -163,17 +163,19 @@
     }
 }
 
+/* ------------------------------------------------------- */
 
 @media(max-width:330px){
+
     #contacto header h3{    
         font-size: 1rem;
     }
 
-    #contacto header h3::after {
+    #contacto header h3::after{
         width: 30%;
     }
 
-    #contacto .form_container {
+    #contacto .form_container{
         width: 90%;
         padding: 1.5rem;
     }

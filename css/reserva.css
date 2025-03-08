@@ -1,5 +1,7 @@
-/* Estilos para la sección de reserva */
-#reserva {
+/*------ SECCIÓN RESERVA ------*/
+
+/*------ Estilos para la sección de reserva ------*/
+#reserva{
     width: 100vw;
     min-height: 42vh;
     display: flex;
@@ -11,8 +13,8 @@
     gap: 5rem;
 }
 
-/* Filtro de blanco y negro SOLO para el fondo */
-#reserva::before {
+/*------ Filtro de blanco y negro SOLO para el fondo ------*/
+#reserva::before{
     content: "";
     position: absolute;
     top: 0;
@@ -27,7 +29,7 @@
     z-index: -1; /* Mantiene el fondo detrás del contenido */
 }
 
-#reserva header {
+#reserva header{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -35,7 +37,7 @@
     color: var(--text_black);
 }
 
-#reserva h3 {
+#reserva h3{
     font-size: 1.5rem;
     text-align: left;
     font-family: "Playfair Display", serif;
@@ -63,14 +65,14 @@
     margin-bottom: 2rem;
 }
 
-#reserva h2 {
+#reserva h2{
     font-size: 1.4rem;
     font-family: "Poopins", serif;
     font-weight: 550;
     color: var(--background_dorado2);
 }
 
-#reserva ul {
+#reserva ul{
     display: flex;
     align-items: flex-start;
     gap: 3rem;
@@ -79,16 +81,16 @@
     margin-right: 5rem;
 }
 
-#reserva li {
+#reserva li{
     transition: transform 0.3s ease-in-out;
 }
 
 /* efecto al pasar el maouse */
-#reserva li:hover {
+#reserva li:hover{
     transform: scale(1.1); 
 }
 
-#reserva img {
+#reserva img{
     width: 100px;
     filter: none; /* para que conserven su color original */
     border-radius: 25px 25px 25px 0px;
@@ -97,11 +99,11 @@
 
 /* -------------------------------------------------------- */
 
-/* Pantallas mas chicas */
+/*------ Pantallas mas chicas ------*/
 
 @media(min-width:561px) and (max-width: 1075px) {
     
-    #reserva {
+    #reserva{
         padding: 3rem 3rem;
         gap: 2rem;
     }
@@ -111,7 +113,7 @@
         min-width: 170px;
     }
 
-    #reservas h3 {
+    #reservas h3{
         font-size: 1.1rem;
     }
 
@@ -153,7 +155,7 @@
         margin-left: 1rem;
     }
     
-    #reserva h3 {
+    #reserva h3{
         font-size: 1.1rem;
         margin-top: 2rem;
     }
@@ -209,7 +211,7 @@
         margin-left: 1rem;
     }
     
-    #reserva h3 {
+    #reserva h3{
         font-size: 1.1rem;
         margin-top: 2rem;
     }
@@ -244,6 +246,5 @@
     #reserva img{
         width: 75px;
     }
-
 }
 

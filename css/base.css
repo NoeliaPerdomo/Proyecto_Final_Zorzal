@@ -1,9 +1,9 @@
 
-/* Fonts */
+/*------ Fonts ------*/
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@100..900&family=Playfair+Display:wght@400&family=Josefin+Sans:wght@100&display=swap");
 
-@font-face {
+@font-face{
     font-family: "Cheltenham";
     src: url("fonts/cheltenham.woff2") format("woff2"),
          url("fonts/cheltenham.woff") format("woff");
@@ -11,14 +11,14 @@
     font-style: normal;
 }
 
-@font-face {
+@font-face{
     font-family: "Playfair Display";
     src: url("fonts/PlayfairDisplay-Regular.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
 }
 
-@font-face {
+@font-face{
     font-family: "Josefin Sans";
     src: url("fonts/JosefinSans-Thin.woff2") format("woff2");
     font-weight: 100;
@@ -26,27 +26,22 @@
 }
 
 
-
-body {
-    font-family: "Cheltenham", "Montserrat", "Poppins", "Josefin Sans", "Playfair Display", sans-serif;
-}
-
 :root{
 
-    /* Background colors */
+/*------ Colores Background ------*/
 
-    --background: white;
-    --background_gray: rgb(250, 250, 250);
-    --background_gray_intermedio: rgb(240, 237, 237);
-    --background_black: rgb(14, 14, 14);
-    --background_black2: rgb(23, 23, 23); 
-    --background_dorado_light: #e9d0b2;
-    --background_dorado: #c59b66;
-    --background_dorado2:#c9a16F;
-    --background_dorado3:#ae8b5f;
+--background: white;
+--background_gray: rgb(250, 250, 250);
+--background_gray_intermedio: rgb(240, 237, 237);
+--background_black: rgb(14, 14, 14);
+--background_black2: rgb(23, 23, 23); 
+--background_dorado_light: #e9d0b2;
+--background_dorado: #c59b66;
+--background_dorado2:#c9a16F;
+--background_dorado3:#ae8b5f;
 
 
-    /* Texto colors */
+/*------ Colores Text ------*/
 
     --text_white: white;
     --text_black: black;
@@ -58,7 +53,7 @@ body {
     --text_dorado2:#c9a16F;
     --text_dorado3:#b08c60;
 
-    /* Botones colors */
+/*------ Colores Botones ------*/
 
     --btn_dorado: #c59b66;
     --btn_dorado2:#c9a16F;
@@ -93,6 +88,7 @@ body{
     text-align: center;
     overflow-x: hidden;
     overflow-y: auto;
+    font-family: "Cheltenham", "Montserrat", "Poppins", "Josefin Sans", "Playfair Display", sans-serif;
 }
 
 img{
@@ -110,8 +106,14 @@ label, button{
 }
 
 
-
-/* Ajusta este valor según la altura de tu encabezado fijo */
-[id] {
+/*------- Con esto ajusto el scroll al hacer click en los enlaces del nav ------*/
+[id]{
     scroll-margin-top: 150px; 
+}
+
+/*------ Lo mismo pero para pantallas mas chicas ------*/
+@media screen and (max-width: 768px){
+    [id]{
+        scroll-margin-top: 190px;
+    }
 }

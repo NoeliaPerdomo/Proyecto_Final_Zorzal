@@ -1,3 +1,5 @@
+/*------ SECCIÓN FOOTER ------*/
+
 body > footer{
     width: 100vw;
     display: flex;
@@ -62,7 +64,7 @@ body > footer nav a{
     margin: 0;
 }
 
-#linea_zorzal li {
+#linea_zorzal li{
     display: flex;
     align-items: center;
     gap: 0rem;
@@ -73,7 +75,6 @@ body > footer nav a{
     width: 50px;
     height: auto;
 }
-
 
 #linea_zorzal h2{
     font-size: 0.75rem;
@@ -115,11 +116,11 @@ body > footer nav a{
 
 /* -------------------------------------------------------- */
 
-/* Pantallas mas chicas */
+/*------ Pantallas mas chicas ------*/
 
 @media(min-width: 561px) and (max-width: 1075px){
 
-    #linea_zorzal {
+    #linea_zorzal{
         flex-direction: column;
         justify-content: center;
         gap: 0.5rem;
@@ -150,32 +151,32 @@ body > footer nav a{
         height: 0.5px;
     }
     
-    #linea_zorzal ul {
+    #linea_zorzal ul{
         list-style: none;
         padding: 0;
         margin: 0;
     }
     
-    #linea_zorzal li {
+    #linea_zorzal li{
         justify-content: flex-start;
         gap: 0.3rem;
     }
     
-    #linea_zorzal img {
+    #linea_zorzal img{
         width: 25px;
     }
     
-    #linea_zorzal h2 {
+    #linea_zorzal h2{
         font-size: 0.6rem;
         margin: 0;
         text-align: left; /* Alinea el texto con la imagen */
     }
     
-    #linea_zorzal ul li {
+    #linea_zorzal ul li{
         text-align: center;
     }
     
-    #linea_zorzal ul li p {
+    #linea_zorzal ul li p{
         text-align: center;
         align-items: center;
         font-size: 0.6rem;
@@ -189,8 +190,9 @@ body > footer nav a{
 /* -------------------------------------------------------- */
 
 
-@media (max-width: 560px) {
-    #linea_zorzal {
+@media (max-width: 560px){
+
+    #linea_zorzal{
         flex-direction: column;
         justify-content: center;
         gap: 0.5rem;
@@ -222,7 +224,7 @@ body > footer nav a{
     }
     
 
-    #linea_zorzal ul {
+    #linea_zorzal ul{
         list-style: none;
         padding: 0;
         margin: 0;
@@ -233,11 +235,11 @@ body > footer nav a{
         flex-direction: column;
     }
     
-    #linea_zorzal img {
+    #linea_zorzal img{
         width: 25px;
     }
     
-    #linea_zorzal h2 {
+    #linea_zorzal h2{
         font-size: 0.55rem;
         margin: 0;
         text-align: center; 
@@ -250,7 +252,7 @@ body > footer nav a{
         text-align: center;
     }
     
-    #linea_zorzal ul li p {
+    #linea_zorzal ul li p{
         text-align: center; 
         align-items: center;
         font-size: 0.55rem;

@@ -1,3 +1,5 @@
+/*------ SECCIÓN REGISTRARSE ------*/
+
 @import url("../css/base.css");
 
 body{
@@ -18,7 +20,7 @@ body{
     overflow: hidden; /* Para que la imagen y el formulario sigan la curva */
 }
 
-/* Imagen a la izquierda */
+/*------ Imagen a la izquierda ------*/
 #contenedor_imagen{
     flex: 1; /* Ocupa la mitad del espacio */
     display: flex;
@@ -32,7 +34,7 @@ body{
     object-fit: cover;
 }
 
-/* Formulario a la derecha */
+/*------ Formulario a la derecha ------*/
 #contenedor_formulario{
     flex: 1;
     padding: 0.8rem 2rem;
@@ -42,7 +44,7 @@ body{
     text-align: center;
 }
 
-/* Estilos de título */
+/*------ Estilos de título ------*/
 #contenedor_formulario h1{
     font-size: 1.4rem;
     font-family: "Playfair Display", serif;
@@ -59,7 +61,7 @@ body{
     margin-bottom: 2rem;
 }
 
-/* Estilos del formulario */
+/*------ Estilos del formulario ------*/
 #formulario{
     display: flex;
     flex-direction: column;
@@ -82,8 +84,7 @@ body{
     justify-content: center;
 }
 
-
-/* Botón de inicio de sesión */
+/*------ Botón de inicio de sesión ------*/
 #formulario button {
     background-color: var(--btn_dorado2);
     color: white;
@@ -110,7 +111,7 @@ body{
     margin-top: 0.5rem;
 }
 
-/* Botón de "Volver al Home" */
+/*------ Botón de "Volver al Home" ------*/
 #volver_home{
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -139,11 +140,13 @@ body{
     display: flex;
 }
 
+/* ---------------------------------------------------- */
 
-/* PARA PANTALLAS MAS CHICAS */
+/*------ PANTALLAS MAS CHICAS ------*/
 
-@media screen and (max-width: 768px) {
-    #registrarse {
+@media screen and (max-width: 768px){
+    
+    #registrarse{
         flex-direction: column;
         width: 100%;
         min-height: 100vh;
@@ -152,12 +155,12 @@ body{
         justify-content: flex-start;
     }
 
-    /* Imagen de fondo */
-    #contenedor_imagen {
+    /*------ Imagen de fondo ------*/
+    #contenedor_imagen{
         display: none; /* Oculta la imagen como elemento separado */
     }
 
-    #contenedor_formulario {
+    #contenedor_formulario{
         flex: 1;
         width: 100%;
         padding: 0rem 2rem;
@@ -170,26 +173,26 @@ body{
         color: white;
     }
 
-    #contenedor_formulario h1 {
+    #contenedor_formulario h1{
         color: var(--text_white);
         font-size: 1.5rem;
         margin-bottom: 1.3rem;
         margin-top: 2rem;
     }
     
-    #contenedor_formulario p {
+    #contenedor_formulario p{
         color: var(--text_white);
         font-size: 0.8rem;
         margin-bottom: 1.8rem;
     }
     
-    #formulario label {
+    #formulario label{
         color: var(--text_white);
         font-size: 0.7rem;
         margin-bottom: 0.2rem;
     }
 
-    #formulario input {
+    #formulario input{
         background: rgba(255, 255, 255, 0.2);
         border: 1px solid rgba(255, 255, 255, 0.5);
         color: white;
@@ -198,11 +201,11 @@ body{
         font-size: 0.7rem;
     }
 
-    #formulario input::placeholder {
+    #formulario input::placeholder{
         color: rgba(255, 255, 255, 0.7);
     }
 
-    #formulario button {
+    #formulario button{
         font-size: 0.8rem;
         font-weight: 500;
         width: 100%;
@@ -210,18 +213,18 @@ body{
         margin-bottom: 0.8rem;
     }
 
-    .iniciar_sesion {
+    .iniciar_sesion{
         color: var(--text_white);
         font-size: 0.7rem;
     }
 
-    #volver_home a {
+    #volver_home a{
         color: var(--text_white);
         font-size: 1rem;
         margin-bottom: 4rem;
     }
 
-    #icon_home img {
+    #icon_home img{
         filter: brightness(0) invert(1);
     }
 }

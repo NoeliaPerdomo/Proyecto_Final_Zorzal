@@ -1,3 +1,4 @@
+/*------ SECCIÓN HEADER ------*/
 
 body > header{
     width: 100%;
@@ -12,7 +13,7 @@ body > header{
     z-index: 9;
 }
 
-/* Primera Linea Titulos y botones */
+/*------ Primera Linea Titulos y botones ------*/
 body > header > .header_top{
     display: flex;
     justify-content: space-between;
@@ -23,7 +24,7 @@ body > header > .header_top{
     gap: 1rem;
 }
 
-/* Casa de campo boutique */
+/*------ Casa de campo boutique ------*/
 body > header > .header_top > h2{
     display: flex;
     text-align: center;
@@ -35,7 +36,7 @@ body > header > .header_top > h2{
     color: var(--text_black);
 }
 
-/* Zorzal */
+/*------ Zorzal ------*/
 body > header > .header_top > h1{
     font-size: 2.2rem;
     font-family: "Playfair Display";
@@ -46,7 +47,7 @@ body > header > .header_top > h1{
     color: var(--text_dorado2);
 }
 
-/* by Jacarandá */
+/*------ by Jacarandá ------*/
 body > header > .header_top > h1 > span{
     font-size: 1rem;
     font-style: italic;
@@ -54,15 +55,15 @@ body > header > .header_top > h1 > span{
 }
 
 
-/* Botones */
-body > header > .header_top > .user_btn {
+/*------ Botones ------*/
+body > header > .header_top > .user_btn{
     display: flex;
     align-items: center;
     text-align: center;
     gap: 0.5rem;
 }
 
-body > header > .header_top > .user_btn > .btn {
+body > header > .header_top > .user_btn > .btn{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,7 +97,7 @@ body > header > .header_top > .user_btn > .btn:nth-child(2):hover{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Barra de navegación principal */
+/*------ Barra de navegación principal ------*/
 body > header > .nav_menu{
     width: 100%;
     display: flex;
@@ -131,7 +132,6 @@ body > header > .nav_menu > a:hover{
     color: var(--text_terracota);
 }
 
-
 body > header > .nav_menu > a::after{
     content: "";
     width: 100%;
@@ -148,7 +148,7 @@ body > header > .nav_menu > a:hover::after{
 }
 
 
-/* Menu hamburguesa para pantallas mas chicas */
+/*------ MENU HAMBURGUESA para pantallas mas chicas ------*/
 body > header > form{
     display: flex;
     justify-content: flex-end;
@@ -160,7 +160,6 @@ body > header > form{
 body > header > form input[type="checkbox"]{
     display: none; 
 }
-
 
 body > header > form label{
     width: 1.5rem;
@@ -183,7 +182,7 @@ body > header > form {
     display: none;
 }
 
-/* fondo difumado */
+/* Fondo difumado */
 body::before{
     content: "";
     position: fixed;
@@ -205,498 +204,484 @@ body:has(#actions input[type="checkbox"]:checked)::before{
 /* ------------------------------------------------------------------- */
 
 
+/*------ Mostrar el menú hamburguesa y ocultar el menú principal en pantallas más pequeñas ------*/
 
-/* Mostrar el menú hamburguesa y ocultar el menú principal en pantallas más pequeñas */
-@media (min-width: 769px) and (max-width: 1024px) {
+    @media (min-width: 769px) and (max-width: 1024px){
 
-/* Primera Linea Titulos y botones */
+    /*------ Primera Linea Titulos y botones ------*/
 
-body > header > .header_top{
-    padding-bottom: 0.1rem;
-    align-items: baseline;
-}
+    body > header > .header_top{
+        padding-bottom: 0.1rem;
+        align-items: baseline;
+    }
 
-/* Casa de campo boutique */
-body > header > .header_top > h2{
-    font-size: 1rem;
-}
+    /*------ Casa de campo boutique ------*/
+    body > header > .header_top > h2{
+        font-size: 1rem;
+    }
 
-/* Zorzal */
-body > header > .header_top > h1{
-    flex-direction: column;
-    align-items: center;
-    gap:0;
-    font-size: 2.5rem;
-}
+    /*------ Zorzal ------*/
+    body > header > .header_top > h1{
+        flex-direction: column;
+        align-items: center;
+        gap:0;
+        font-size: 2.5rem;
+    }
 
-/* by Jacarandá */
-body > header > .header_top > h1 > span{
-    font-size: 0.8rem;
-    align-items: center;
+    /*------ by Jacarandá ------*/
+    body > header > .header_top > h1 > span{
+        font-size: 0.8rem;
+        align-items: center;
+    }
 
-}
-
-/* Ocultar el menú principal */
-body > header > .nav_menu {
+    /*------ Ocultar el menú principal ------*/
+    body > header > .nav_menu {
         display: none;
-}
+    }
 
-/* Mostrar el menú hamburguesa */
- body > header > form {
-    display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
-    padding-bottom: 0.2rem; ;
-}
+    /*------ Mostrar el menú hamburguesa ------*/
+    body > header > form {
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+        padding-bottom: 0.2rem; ;
+    }
 
-/* Efecto al abrir menu hamburguesa */
-body > header > form > nav {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--background_);
-    padding: 1rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    pointer-events: none; /* Para no hacer click cuando está oculto */
-}
+    /*------ Efecto al abrir menu hamburguesa ------*/
+    body > header > form > nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--background_);
+        padding: 1rem;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        pointer-events: none; /* Para no hacer click cuando está oculto */
+    }
 
-/* Mostrar el menú hamburguesa al hacer click */
-body > header > form > input[type="checkbox"]:checked ~ nav {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--background);
-    padding: 1rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /*------ Mostrar el menú hamburguesa al hacer click ------*/
+    body > header > form > input[type="checkbox"]:checked ~ nav{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--background);
+        padding: 1rem;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     
-    /* Efecto menu */
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: all; /* Para poder usar el menú */
-}
+        /* Efecto menu */
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: all; /* Para poder usar el menú */
+    }
 
+    body > header > form > .mobile_menu > a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 0.7rem;
+        color: var(--text_dorado2);
+        font-weight: 600;
+        font-family: "Montserrat";
+        text-decoration: none;
+        padding: 1rem;
+        border-bottom: 1px solid var(--background_dorado_light);
+    }
 
-body > header > form > .mobile_menu > a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 0.7rem;
-    color: var(--text_dorado2);
-    font-weight: 600;
-    font-family: "Montserrat";
-    text-decoration: none;
-    padding: 1rem;
-    border-bottom: 1px solid var(--background_dorado_light);
-}
-
-body > header > form > input[type="checkbox"]:checked ~ .mobile_menu{
-    display: block;
-    background-color: var(--background); 
-    padding: 1rem;
-    transition: background-color 0.3s ease-in-out;
-}
+    body > header > form > input[type="checkbox"]:checked ~ .mobile_menu{
+        display: block;
+        background-color: var(--background); 
+        padding: 1rem;
+        transition: background-color 0.3s ease-in-out;
+    }
     
-/* Cambio de fondo al hacer hover sobre los enlaces del menú */
-body > header > form > .mobile_menu > a:hover {
-    background-color: var(--background_gray);
-    color: var(--text_terracota); 
-    transition: background-color 0.3s ease-in-out;
-}
+    /* Cambio de fondo al hacer hover sobre los enlaces del menú */
+    body > header > form > .mobile_menu > a:hover {
+        background-color: var(--background_gray);
+        color: var(--text_terracota); 
+        transition: background-color 0.3s ease-in-out;
+    }
 
-/* Cambio de fondo cuando se presiona en pantallas táctiles */
-body > header > form > .mobile_menu > a:active {
-    background-color: var(--background_gray); 
-    color: var(--text_terracota)
+    /* Cambio de fondo cuando se presiona en pantallas táctiles */
+    body > header > form > .mobile_menu > a:active {
+        background-color: var(--background_gray); 
+        color: var(--text_terracota)
+    }
 }
-
-}
-
 
 /* ------------------------------------------------------------------- */
-
 
 @media(min-width:481px) and (max-width:768px){
 
-/* Primera Linea Titulos y botones */
+    /*------ Primera Linea Titulos y botones ------*/
 
-/* Casa de campo boutique */
-body > header > .header_top > h2{
-    display: none;
-}
-    
-/* Zorzal */
-body > header > .header_top > h1{
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-    padding-left: 1.2rem;
-    font-size: 2.2rem;
+    /*------ Casa de campo boutique ------*/
+    body > header > .header_top > h2{
+        display: none;
     }
     
-/* by Jacarandá */
-body > header > .header_top > h1 > span{
-    font-size: 0.8rem;
+    /*------ Zorzal ------*/
+    body > header > .header_top > h1{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding-left: 1.2rem;
+        font-size: 2.2rem;
     }
     
-/* Iniciar sesion y Registrarse */
-body > header > .header_top > .user_btn > .btn {
-    font-size: 0.6rem;
+    /*------ by Jacarandá ------*/
+    body > header > .header_top > h1 > span{
+        font-size: 0.8rem;
+    }
+    
+    /*------ Iniciar sesion y Registrarse ------*/
+    body > header > .header_top > .user_btn > .btn{
+        font-size: 0.6rem;
     }
 
-/* Ocultar el menú principal */
-body > header > .nav_menu {
-    display: none;
- }
+    /*------ Ocultar el menú principal ------*/
+    body > header > .nav_menu{
+        display: none;
+    }
     
-/* Mostrar el menú hamburguesa */
-body > header > form {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: center;
-}
+    /*------ Mostrar el menú hamburguesa -------*/
+    body > header > form{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+    }
     
-/* Efecto al abrir menu hamburguesa */
-body > header > form > nav {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--background_);
-    padding: 1rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    pointer-events: none; /* Para no hacer click cuando está oculto */
-}
+    /*------ Efecto al abrir menu hamburguesa ------*/
+    body > header > form > nav{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--background_);
+        padding: 1rem;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        pointer-events: none; /* Para no hacer click cuando está oculto */
+    }
     
-/* Mostrar el menú hamburguesa al hacer click */
-body > header > form > input[type="checkbox"]:checked ~ nav {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--background);
-    padding: 1rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /*------ Mostrar el menú hamburguesa al hacer click ------*/
+    body > header > form > input[type="checkbox"]:checked ~ nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--background);
+        padding: 1rem;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         
-    /* Efecto menu */
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: all; /* Para poder usar el menú */
-}
+        /* Efecto menu */
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: all; /* Para poder usar el menú */
+    }
     
     
-body > header > form > .mobile_menu > a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 0.7rem;
-    color: var(--text_dorado2);
-    font-weight: 600;
-    font-family: "Montserrat";
-    text-decoration: none;
-    padding: 1rem;
-    border-bottom: 1px solid var(--background_dorado_light);
-}
+    body > header > form > .mobile_menu > a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 0.7rem;
+        color: var(--text_dorado2);
+        font-weight: 600;
+        font-family: "Montserrat";
+        text-decoration: none;
+        padding: 1rem;
+        border-bottom: 1px solid var(--background_dorado_light);
+    }
     
-body > header > form > input[type="checkbox"]:checked ~ .mobile_menu{
-    display: block;
-    background-color: var(--background); 
-    padding: 1rem;
-    transition: background-color 0.3s ease-in-out;
-}
+    body > header > form > input[type="checkbox"]:checked ~ .mobile_menu{
+        display: block;
+        background-color: var(--background); 
+        padding: 1rem;
+        transition: background-color 0.3s ease-in-out;
+    }
         
-/* Cambio de fondo al hacer hover sobre los enlaces del menú */
-body > header > form > .mobile_menu > a:hover {
-    background-color: var(--background_gray);
-    color: var(--text_terracota); 
-    transition: background-color 0.3s ease-in-out;
-}
+    /* Cambio de fondo al hacer hover sobre los enlaces del menú */
+    body > header > form > .mobile_menu > a:hover {
+        background-color: var(--background_gray);
+        color: var(--text_terracota); 
+        transition: background-color 0.3s ease-in-out;
+    }
     
-/* Cambio de fondo cuando se presiona en pantallas táctiles */
-body > header > form > .mobile_menu > a:active {
-    background-color: var(--background_gray); 
-    color: var(--text_terracota)
+    /* Cambio de fondo cuando se presiona en pantallas táctiles */
+    body > header > form > .mobile_menu > a:active {
+        background-color: var(--background_gray); 
+        color: var(--text_terracota)
+    }
 }
-
-}
-
 
 
 /* ------------------------------------------------------------------- */
 
-
-
-@media(min-width:195px) and (max-width: 480px) {
+@media(min-width:195px) and (max-width: 480px){
   
-
-/* Primera Linea Titulos y botones */
-body > header > .header_top{
-    flex-direction: column;
-    justify-content: center;
-    padding: 0.2rem 1rem;
-    gap: 2rem;
-}
+    /*------ Primera Linea Titulos y botones ------*/
+    body > header > .header_top{
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.2rem 1rem;
+        gap: 2rem;
+    }
     
-/* Casa de campo boutique */
-body > header > .header_top > h2{
-    display: none;
-}
+    /*------- Casa de campo boutique ------*/
+    body > header > .header_top > h2{
+        display: none;
+    }
     
-/* Zorzal */
-body > header > .header_top > h1{
-    font-size: 2.4rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.1rem;
-    padding-top: 0.5rem;
-}
+    /*------ Zorzal ------*/
+    body > header > .header_top > h1{
+        font-size: 2.4rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.1rem;
+        padding-top: 0.5rem;
+    }
     
-/* by Jacarandá */
-body > header > .header_top > h1 > span{
-    font-size: 0.9rem;
-}
+    /*------ by Jacarandá ------*/
+    body > header > .header_top > h1 > span{
+        font-size: 0.9rem;
+    }
     
-/* Iniciar sesion y Registrarse */
-body > header > .header_top > .user_btn {
-    justify-content: center;
-    gap: 0.4rem;
-}
-
-body > header > .header_top > .user_btn > .btn {
-    padding: 0.5rem 0.5rem;
-    font-size: 0.5rem;
+    /*------ Iniciar sesion y Registrarse ------*/
+    body > header > .header_top > .user_btn{
+        justify-content: center;
+        gap: 0.4rem;
     }
 
-/* Ocultar el menú principal */
-body > header > .nav_menu {
-    display: none;
-}
-    
-/* Mostrar el menú hamburguesa */
-body > header > form {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: center;
-    padding-top: 1rem;
-    padding-right: 1rem;
-}
-    
-/* Efecto al abrir menu hamburguesa */
-body > header > form > nav {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--background_);
-    padding: 1rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    pointer-events: none; /* Para no hacer click cuando está oculto */
-}
-    
-/* Mostrar el menú hamburguesa al hacer click */
-body > header > form > input[type="checkbox"]:checked ~ nav {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--background);
-    padding: 1rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        
-    /* Efecto menu */
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: all; /* Para poder usar el menú */
-}
-    
-    
-body > header > form > .mobile_menu > a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 0.6rem;
-    color: var(--text_dorado2);
-    font-weight: 600;
-    font-family: "Montserrat";
-    text-decoration: none;
-    padding: 1rem;
-    border-bottom: 1px solid var(--background_dorado_light);
-}
-    
-body > header > form > input[type="checkbox"]:checked ~ .mobile_menu{
-    display: block;
-    background-color: var(--background); 
-    padding: 1rem;
-    transition: background-color 0.3s ease-in-out;
-}
-        
-/* Cambio de fondo al hacer hover sobre los enlaces del menú */
-body > header > form > .mobile_menu > a:hover {
-    background-color: var(--background_gray);
-    color: var(--text_terracota); 
-    transition: background-color 0.3s ease-in-out;
-}
-    
-/* Cambio de fondo cuando se presiona en pantallas táctiles */
-body > header > form > .mobile_menu > a:active {
-    background-color: var(--background_gray); 
-    color: var(--text_terracota)
-}
+    body > header > .header_top > .user_btn > .btn{
+        padding: 0.5rem 0.5rem;
+        font-size: 0.5rem;
+    }
 
+    /*------ Ocultar el menú principal ------*/
+    body > header > .nav_menu{
+        display: none;
+    }
+    
+    /*------ Mostrar el menú hamburguesa ------*/
+    body > header > form{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+        padding-top: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /*------ Efecto al abrir menu hamburguesa ------*/
+    body > header > form > nav{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--background_);
+        padding: 1rem;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        pointer-events: none; /* Para no hacer click cuando está oculto */
+    }
+    
+    /*------ Mostrar el menú hamburguesa al hacer click ------*/
+    body > header > form > input[type="checkbox"]:checked ~ nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--background);
+        padding: 1rem;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        
+        /* Efecto menu */
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: all; /* Para poder usar el menú */
+    }
+    
+    body > header > form > .mobile_menu > a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 0.6rem;
+        color: var(--text_dorado2);
+        font-weight: 600;
+        font-family: "Montserrat";
+        text-decoration: none;
+        padding: 1rem;
+        border-bottom: 1px solid var(--background_dorado_light);
+    }
+    
+    body > header > form > input[type="checkbox"]:checked ~ .mobile_menu{
+        display: block;
+        background-color: var(--background); 
+        padding: 1rem;
+        transition: background-color 0.3s ease-in-out;
+    }
+        
+    /* Cambio de fondo al hacer hover sobre los enlaces del menú */
+    body > header > form > .mobile_menu > a:hover{
+        background-color: var(--background_gray);
+        color: var(--text_terracota); 
+        transition: background-color 0.3s ease-in-out;
+    }
+    
+    /* Cambio de fondo cuando se presiona en pantallas táctiles */
+    body > header > form > .mobile_menu > a:active{
+        background-color: var(--background_gray); 
+        color: var(--text_terracota)
+    }
 } 
-
 
 /* ----------------------------------------------------- */
 
 @media (max-width: 194px){
-    /* Primera Linea Titulos y botones */
-body > header > .header_top{
-    flex-direction: column;
-    justify-content: center;
-    padding: 0.2rem 1rem;
-    gap: 2rem;
-}
-    
-/* Casa de campo boutique */
-body > header > .header_top > h2{
-    display: none;
-}
-    
-/* Zorzal */
-body > header > .header_top > h1{
-    font-size: 2rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.1rem;
-    padding-top: 0.5rem;
-}
-    
-/* by Jacarandá */
-body > header > .header_top > h1 > span{
-    font-size: 0.7rem;
-}
-    
-/* Iniciar sesion y Registrarse */
-body > header > .header_top > .user_btn {
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.1rem;
-}
 
-body > header > .header_top > .user_btn > .btn {
-    padding: 0.5rem 0.5rem;
-    font-size: 0.5rem;
+    /*------ Primera Linea Titulos y botones ------*/
+    body > header > .header_top{
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.2rem 1rem;
+        gap: 2rem;
+    }
+    
+    /*------ Casa de campo boutique ------*/
+    body > header > .header_top > h2{
+        display: none;
+    }
+    
+    /*------ Zorzal ------*/
+    body > header > .header_top > h1{
+        font-size: 2rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.1rem;
+        padding-top: 0.5rem;
+    }
+    
+    /*------ by Jacarandá ------*/
+    body > header > .header_top > h1 > span{
+        font-size: 0.7rem;
+    }
+    
+    /*------ Iniciar sesion y Registrarse ------*/
+    body > header > .header_top > .user_btn{
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.1rem;
     }
 
-/* Ocultar el menú principal */
-body > header > .nav_menu {
-    display: none;
-}
-    
-/* Mostrar el menú hamburguesa */
-body > header > form {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: center;
-    padding-top: 1rem;
-}
-    
-/* Efecto al abrir menu hamburguesa */
-body > header > form > nav {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--background_);
-    padding: 1rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    pointer-events: none; /* Para no hacer click cuando está oculto */
-}
-    
-/* Mostrar el menú hamburguesa al hacer click */
-body > header > form > input[type="checkbox"]:checked ~ nav {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--background);
-    padding: 1rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        
-    /* Efecto menu */
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: all; /* Para poder usar el menú */
-}
-    
-    
-body > header > form > .mobile_menu > a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 0.6rem;
-    color: var(--text_dorado2);
-    font-weight: 600;
-    font-family: "Montserrat";
-    text-decoration: none;
-    padding: 1rem;
-    border-bottom: 1px solid var(--background_dorado_light);
-}
-    
-body > header > form > input[type="checkbox"]:checked ~ .mobile_menu{
-    display: block;
-    background-color: var(--background); 
-    padding: 1rem;
-    transition: background-color 0.3s ease-in-out;
-}
-        
-/* Cambio de fondo al hacer hover sobre los enlaces del menú */
-body > header > form > .mobile_menu > a:hover {
-    background-color: var(--background_gray);
-    color: var(--text_terracota); 
-    transition: background-color 0.3s ease-in-out;
-}
+    body > header > .header_top > .user_btn > .btn{
+        padding: 0.5rem 0.5rem;
+        font-size: 0.5rem;
+    }   
 
-/* Cambio de fondo cuando se presiona en pantallas táctiles */
-body > header > form > .mobile_menu > a:active {
-    background-color: var(--background_gray); 
-    color: var(--text_terracota)
-}
+    /*------ Ocultar el menú principal ------*/
+    body > header > .nav_menu{
+        display: none;
+    }
+    
+    /*------ Mostrar el menú hamburguesa ------*/
+    body > header > form{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+        padding-top: 1rem;
+    }
+    
+    /*------ Efecto al abrir menu hamburguesa ------*/
+    body > header > form > nav{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--background_);
+        padding: 1rem;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        pointer-events: none; /* Para no hacer click cuando está oculto */
+    }
+    
+    /*------ Mostrar el menú hamburguesa al hacer click ------*/
+    body > header > form > input[type="checkbox"]:checked ~ nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--background);
+        padding: 1rem;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        
+        /* Efecto menu */
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: all; /* Para poder usar el menú */
+    }
+    
+    body > header > form > .mobile_menu > a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 0.6rem;
+        color: var(--text_dorado2);
+        font-weight: 600;
+        font-family: "Montserrat";
+        text-decoration: none;
+        padding: 1rem;
+        border-bottom: 1px solid var(--background_dorado_light);
+    }
+    
+    body > header > form > input[type="checkbox"]:checked ~ .mobile_menu{
+        display: block;
+        background-color: var(--background); 
+        padding: 1rem;
+        transition: background-color 0.3s ease-in-out;
+    }
+        
+    /* Cambio de fondo al hacer hover sobre los enlaces del menú */
+    body > header > form > .mobile_menu > a:hover{
+        background-color: var(--background_gray);
+        color: var(--text_terracota); 
+        transition: background-color 0.3s ease-in-out;
+    }
 
+    /* Cambio de fondo cuando se presiona en pantallas táctiles */
+    body > header > form > .mobile_menu > a:active{
+        background-color: var(--background_gray); 
+        color: var(--text_terracota)
+    }
 }

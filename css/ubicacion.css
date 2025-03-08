@@ -1,3 +1,5 @@
+/*------ SECCIÓN DONDE ESTAMOS? ------*/
+
 #ubicacion{
     width: 100vw;
     display: flex;
@@ -46,9 +48,11 @@
     padding-bottom: 3rem;
 }
 
-/* ----------------------------------------------- */
+/* ------------------------------------------------------- */
 
-@media(min-width:561px) and (max-width:940px) {
+/*------ PANTALLAS MAS CHICAS ------*/
+
+@media(min-width:561px) and (max-width:940px){
 
     #ubicacion{
         align-items: center;
@@ -69,7 +73,6 @@
         line-height: 1.4rem;
         padding-bottom: 0;
     }
-
 }
 
 /* -------------------------------------------------------- */

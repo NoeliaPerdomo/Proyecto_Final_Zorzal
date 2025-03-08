@@ -1,3 +1,5 @@
+/*------ SECCIÓN DESCANSO Y ENTRETENIMIENTO ------*/
+
 #descanso{
     width: 100vw;
     display: flex;
@@ -28,7 +30,7 @@
 }
 
 
-/* SECCION ICONOS */
+/*------ SECCION ICONOS ------*/
 
 #descanso_icons{
     display: flex;
@@ -37,8 +39,8 @@
     margin-bottom: 2rem;
 }
 
-/* Contenedor de íconos */
-#descanso_icons ul {
+/*------ Contenedor de íconos con grid ------*/
+#descanso_icons ul{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Ajuste automático del ancho*/
     gap: 1rem 0.8rem; /* espaciado entre iconos vertical y horizontal */
@@ -49,7 +51,7 @@
     justify-items: center;
 }
 
-#descanso_icons li {
+#descanso_icons li{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,7 +60,7 @@
     padding-bottom: 0.5rem; /*espaciado entre los iconos y el texto */
 }
 
-/* Imágenes de los íconos */
+/*------ Imágenes de los íconos ------*/
 #descanso_icons picture img {
     width: 40px;
     height: auto;
@@ -67,7 +69,7 @@
     aspect-ratio: 1/1;
 }
 
-/* Texto debajo de los íconos */
+/*------ Texto debajo de los íconos ------*/
 #descanso_icons p {
     font-size: 0.75rem;
     font-family: "Poppins", sans-serif;
@@ -79,7 +81,8 @@
 }
 
 
-/* SECCION TEXTO */
+/*------ SECCION TEXTO ------*/
+
 #descanso_text{
     width: 100%;
     display: flex;
@@ -101,9 +104,9 @@
 }
 
 
-/* SECCION DESCANSO Y DIVERSION FOTOS */
+/*------ SECCION FOTOS ------*/
 
-/* uso grid para hacer tres columnas para ubicar las fotos */
+/*------ Uso grid para hacer tres columnas para ubicar las fotos ------*/
 #fotos_descanso ul{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -131,8 +134,9 @@
 
 /* ------------------------------------------------ */
 
-/* Pantallas mas chicas */
-@media(min-width:941px) and (max-width: 1075px) {
+/*------ Pantallas mas chicas ------*/
+
+@media(min-width:941px) and (max-width: 1075px){
 
     #descanso_icons picture img{
         width: 35px;
@@ -152,7 +156,7 @@
 
 /* ----------------------------------------------- */
 
-@media(min-width:561px) and (max-width:940px) {
+@media(min-width:561px) and (max-width:940px){
 
     #descanso{
         align-items: center;

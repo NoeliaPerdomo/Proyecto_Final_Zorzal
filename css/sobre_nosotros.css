@@ -1,3 +1,5 @@
+/*------ SECCIÓN SOBRE NOSOTROS ------*/
+
 #sobre_nosotros{
     width: 100vw;
     display: flex;
@@ -9,7 +11,7 @@
     color: var(--text_black);
 }
 
-/* Titulo con linea debajo */
+/*------ Titulo con linea debajo ------*/
 #titulo{
     font-size: 1.3rem;
     font-family: "Playfair Display", serif;
@@ -27,7 +29,7 @@
     margin: 0;
 }
 
-/* Contenido */
+/*------ Contenido ------*/
 #contenido{
     display: flex;
     align-items: stretch;
@@ -36,7 +38,7 @@
     max-width: 1200;
 }
 
-/* Foto Perfil */
+/*------ Foto Perfil ------*/
 #foto_perfil img{
     width: 300px;
     height: auto;
@@ -69,7 +71,6 @@
     align-items: center;
     gap: 1rem;
     margin-top: 0.75rem;
-
 }
 
 #icono_idioma{
@@ -87,37 +88,35 @@
 
 /* ---------------------------------------------------- */
 
-/* Pantallas mas chicas */
-@media(min-width:941px) and (max-width: 1075px) {
+/*------ Pantallas mas chicas ------*/
 
+@media(min-width:941px) and (max-width: 1075px){
 
- 
-#texto{
-    font-size: 0.80rem;
-    line-height: 1.4rem;
-    margin-bottom: 1rem;
+    #texto{
+        font-size: 0.80rem;
+        line-height: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    #idioma{
+        margin-top: 0.5rem;
+    }
+
+    #icono_idioma{
+        width: 35px;
+    }
+
+    #idioma h4{
+        font-size: 0.80rem;
+    }
 }
 
-#idioma{
-    margin-top: 0.5rem;
-}
 
-#icono_idioma{
-    width: 35px;
-}
+/* ----------------------------------------------------- */
 
-#idioma h4{
-    font-size: 0.80rem;
-}
+@media(min-width:561px) and (max-width:940px){
 
-}
-
-
-/* ----------------------------------------------- */
-
-@media(min-width:561px) and (max-width:940px) {
-
-    #sobre_nosotros {
+    #sobre_nosotros{
         text-align: center;
         align-items: center;
     }
@@ -131,20 +130,20 @@
         margin: 5px auto 0;
     }
 
-    #contenido {
+    #contenido{
         flex-direction: column; 
         align-items: center; 
         text-align: center;
     }
 
-    #foto_perfil img {
+    #foto_perfil img{
         width: 100%;
         max-width: 550px; 
         height: auto;
         border-radius: 35px 0 35px 0;
     }
 
-    #columna_texto {
+    #columna_texto{
         width: 100%; 
         max-width: 550px;
         padding: 1rem;
@@ -169,7 +168,7 @@
 
 @media(max-width: 560px){
 
-    #sobre_nosotros {
+    #sobre_nosotros{
         text-align: center;
         align-items: center;
         padding: 3rem 3.5rem 0rem 3.5rem; /* arriba derecha abajo izquierda */
@@ -186,20 +185,20 @@
         margin: 5px auto 0;
     }
 
-    #contenido {
+    #contenido{
         flex-direction: column; 
         align-items: center; 
         text-align: center;
     }
 
-    #foto_perfil img {
+    #foto_perfil img{
         width: 100%;
         max-width: 420px; 
         height: auto;
         border-radius: 20px 0 20px 0;
     }
 
-    #columna_texto {
+    #columna_texto{
         width: 100%; 
         max-width: 420px;
         padding: 1rem;
@@ -217,5 +216,4 @@
     #icono_idioma{
         width: 35px;
     }
-
 }
