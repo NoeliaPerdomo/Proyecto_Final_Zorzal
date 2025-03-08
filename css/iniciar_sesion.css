@@ -141,6 +141,7 @@ body{
 
 
 /* PARA PANTALLAS MAS CHICAS */
+@import url("../css/base.css");
 
 @media screen and (max-width: 768px) {
 
