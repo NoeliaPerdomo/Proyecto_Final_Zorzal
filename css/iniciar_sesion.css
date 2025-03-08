@@ -63,7 +63,7 @@ body{
 #formulario{
     display: flex;
     flex-direction: column;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
 }
 
 #formulario label{
@@ -186,10 +186,10 @@ body{
         margin-bottom: 2rem;
     }
     
-    
     #formulario label{
         color: var(--text_white);
         font-size: 0.7rem;
+        font-family: "Poppins", sans-serif;
         margin-bottom: 0.3rem;
     }
 
