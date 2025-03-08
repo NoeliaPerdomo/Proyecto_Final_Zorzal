@@ -8,7 +8,6 @@ body{
     background-color: var(--text_gray_light);
 }
 
-
 #iniciar_sesion{
     display: flex; 
     width: 700px;
@@ -162,7 +161,7 @@ body{
     #contenedor_formulario{
         flex: 1;
         width: 100%;
-        padding: 1rem 2rem;
+        padding: 0rem 2rem;
         background: linear-gradient(
             rgba(0, 0, 0, 0.6), 
             rgba(0, 0, 0, 0.5)
@@ -182,7 +181,7 @@ body{
     #contenedor_formulario p{
         color: var(--text_white);
         font-size: 0.9rem;
-        margin-bottom: 3.3rem;
+        margin-bottom: 2rem;
     }
     
     
@@ -221,7 +220,8 @@ body{
     #volver_home a{
         color: var(--text_white);
         font-size: 1.1rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
     #icon_home img{
         filter:brightness(0) invert(1);
