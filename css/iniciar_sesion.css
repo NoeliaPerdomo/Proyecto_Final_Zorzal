@@ -150,6 +150,8 @@ body{
         height: 100vh;
         border-radius: 0;
         box-shadow: none;
+        justify-content: flex-start;
+
     }
 
     /* Imagen de fondo */
@@ -160,7 +162,7 @@ body{
     #contenedor_formulario{
         flex: 1;
         width: 100%;
-        padding: 2rem;
+        padding: 1rem 2rem;
         background: linear-gradient(
             rgba(0, 0, 0, 0.6), 
             rgba(0, 0, 0, 0.5)
@@ -174,7 +176,7 @@ body{
         color: var(--text_white);
         font-size: 1.8rem;
         margin-bottom: 3rem;
-        
+        margin-top: 1rem;
     }
     
     #contenedor_formulario p{
