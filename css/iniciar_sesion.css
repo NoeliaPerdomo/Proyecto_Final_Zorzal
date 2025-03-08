@@ -176,7 +176,7 @@ body{
         color: var(--text_white);
         font-size: 1.8rem;
         margin-bottom: 3rem;
-        margin-top: 1rem;
+        margin-top: 0rem;
     }
     
     #contenedor_formulario p{
