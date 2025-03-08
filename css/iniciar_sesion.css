@@ -174,22 +174,22 @@ body{
 
     #contenedor_formulario h1{
         color: var(--text_white);
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         margin-bottom: 3rem;
         margin-top: 0rem;
     }
     
     #contenedor_formulario p{
         color: var(--text_white);
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin-bottom: 2rem;
     }
     
     
     #formulario label{
         color: var(--text_white);
-        font-size: 0.9rem;
-        margin-bottom: 0.5rem;
+        font-size: 0.7rem;
+        margin-bottom: 0.3rem;
     }
 
     #formulario input {
@@ -198,7 +198,7 @@ body{
         color: white;
         margin-bottom: 2rem;
         padding: 0.8rem;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     #formulario input::placeholder {
@@ -206,7 +206,7 @@ body{
     }
 
     #formulario button{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-weight: 500;
         width: 100%;
         padding: 0.8rem;
