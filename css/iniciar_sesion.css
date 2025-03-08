@@ -63,7 +63,7 @@ body{
 #formulario{
     display: flex;
     flex-direction: column;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins";
 }
 
 #formulario label{
@@ -141,7 +141,6 @@ body{
 
 
 /* PARA PANTALLAS MAS CHICAS */
-@import url("../css/base.css");
 
 @media screen and (max-width: 768px) {
 
@@ -189,7 +188,6 @@ body{
     #formulario label{
         color: var(--text_white);
         font-size: 0.7rem;
-        font-family: "Poppins", sans-serif;
         margin-bottom: 0.3rem;
     }
 

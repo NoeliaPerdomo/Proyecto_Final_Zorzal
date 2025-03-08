@@ -62,7 +62,8 @@ body{
 /* Estilos del formulario */
 #formulario{
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
+    font-family: "Poppins";  
 }
 
 #formulario label{
@@ -140,7 +141,6 @@ body{
 
 
 /* PARA PANTALLAS MAS CHICAS */
-@import url("../css/base.css");
 
 @media screen and (max-width: 768px) {
     #registrarse {
@@ -187,7 +187,6 @@ body{
         color: var(--text_white);
         font-size: 0.7rem;
         margin-bottom: 0.2rem;
-        font-family: "Poppins", sans-serif;
     }
 
     #formulario input {
