@@ -1,0 +1,138 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text_gray_light);
+}
+
+
+#iniciar_sesion {
+    display: flex; 
+    width: 700px;
+    height: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+    border-radius: 1rem;
+    overflow: hidden; /* Para que la imagen y el formulario sigan la curva */
+}
+
+/* Imagen a la izquierda */
+#contenedor_imagen {
+    flex: 1; /* Ocupa la mitad del espacio */
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+#contenedor_imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Formulario a la derecha */
+#contenedor_formulario {
+    flex: 1;
+    padding: 0.8rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilos de título */
+#contenedor_formulario h1 {
+    font-size: 1.4rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    color: #c9a16F;
+    margin-bottom: 1.3rem;
+}
+
+#contenedor_formulario p{
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+/* Estilos del formulario */
+#formulario {
+    display: flex;
+    flex-direction: column;  
+}
+
+#formulario label {
+    text-align: left;
+    font-weight: 400;
+    font-family: "Poppins";
+    font-size: 0.7rem;
+}
+
+#formulario input {
+    padding: 0.6rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+    justify-content: center;
+}
+
+
+/* Botón de inicio de sesión */
+#formulario button {
+    background-color: #c9a16F;
+    color: white;
+    padding: 0.6rem;
+    width: 60%;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 1.2rem;
+    align-self: center;
+}
+
+#formulario button:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.registrarse{
+    font-size: 0.6rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: rgb(34, 34, 34);
+    margin-top: 0.5rem;
+}
+
+/* Botón de "Volver al Home" */
+#volver_home {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#volver_home a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c9a16F;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    margin-top: 1rem;
+    gap: 0.5rem;
+}
+
+#volver_home a:hover {
+    text-decoration: underline;
+}
+
+#icon_home img {
+    width: 20px;
+    height: auto;
+    display: flex;
+}

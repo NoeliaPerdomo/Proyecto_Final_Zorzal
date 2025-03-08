@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--Título pestaña de internet-->
+    <title>Zorzal | Iniciar Sesión</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    
+    <!--Vincular css-->
+    <link rel="stylesheet" href="./css/iniciar_sesion.css">
+</head>
+
+
+
+<body>
+    <main id="iniciar_sesion">
+
+        <section id="contenedor_imagen">
+            <picture id="foto_izq"> <img src="img/Entretenimiento_09.jpg" alt="Chacra Jacarandá"></picture>
+        </section>
+        
+        <section id="contenedor_formulario">
+            <h1>¡Bienvenido a Zorzal!</h1>
+            <p>Inicia sesión para acceder a tu cuenta.</p>
+
+            <form id="formulario">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="✉️ E-mail" required>
+
+                <label for="password"> Contraseña:</label>
+                <input type="password" id="password" name="password" placeholder="🔐 Contraseña" required>
+
+                <button type="submit">INICIAR SESIÓN</button>
+
+                <a href="registrarse.html" class="registrarse"> No tengo cuenta, Registrarme</a>
+            </form>
+
+            <section id="volver_home">
+                <a href="index.html" class="back"><span><picture id="icon_home"><img src="img/icon_home.png" alt="Volver al home"></picture></span>Volver al Home</a>
+            </section>
+        </section>
+
+    </main>
+
+</body>
+</html>

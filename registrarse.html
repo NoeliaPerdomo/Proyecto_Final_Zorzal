@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--Título pestaña de internet-->
+    <title>Zorzal | Iniciar Sesión</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    
+    <!--Vincular css-->
+    <link rel="stylesheet" href="./css/registrarse.css">
+</head>
+
+
+
+<body>
+    <main id="registrarse">
+
+        <section id="contenedor_imagen">
+            <picture id="foto_izq"> <img src="img/Zorzal_03.jpg" alt="Chacra Jacarandá"></picture>
+        </section>
+        
+        <section id="contenedor_formulario">
+            <h1>¡Bienvenido a Zorzal!</h1>
+            <p>Ingresa tus datos para registrarte.</p>
+
+            <form id="formulario">
+
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="👤 Nombre y Apellido" required>
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="📍 País, ciudad y calle" required>
+
+                <label for="edad">Fecha de Nacimiento:</label>
+                <input type="text" id="edad" name="edad" placeholder="🎂 dd/mm/aaaa" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="✉️ e-mail" required>
+
+                <label for="password"> Contraseña:</label>
+                <input type="password" id="password" name="password" placeholder="🔐 Contraseña" required>
+
+                <button type="submit">REGISTRARSE</button>
+
+                <a href="iniciar_sesion.html" class="iniciar_sesion"> Ya tengo cuenta, Iniciar Sesión</a>
+            </form>
+
+            <section id="volver_home">
+                <a href="index.html" class="back"><span><picture id="icon_home"><img src="img/icon_home.png" alt="Volver al home"></picture></span>Volver al Home</a>
+            </section>
+        </section>
+
+    </main>
+
+</body>
+</html>

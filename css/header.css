@@ -236,7 +236,6 @@ body > header > .header_top > h1 > span{
 
 }
 
-
 /* Ocultar el menú principal */
 body > header > .nav_menu {
         display: none;
@@ -693,7 +692,7 @@ body > header > form > .mobile_menu > a:hover {
     color: var(--text_terracota); 
     transition: background-color 0.3s ease-in-out;
 }
-    
+
 /* Cambio de fondo cuando se presiona en pantallas táctiles */
 body > header > form > .mobile_menu > a:active {
     background-color: var(--background_gray); 
